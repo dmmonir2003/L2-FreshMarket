@@ -24,13 +24,14 @@ const FlashCard = ({ data }) => {
                 alignItems="center">
                 {data.map((products, index) => (
                     <Grid item key={index}>
-                        <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 360, maxHeight: 360, position: 'relative' }}>
-                            <Icon aria-label="add to favorites" sx={{ position: 'absolute', top: -7, right: 0, }}>
-                                <FavoriteIcon />
-                            </Icon>
-                            <Icon aria-label="add to favorites" sx={{ position: 'absolute', top: 0, left: 0, backgroundColor: red }}>
-                                <p className='text-xs bg-red-300 py-2 rounded-full text-white'>13%</p>
-                            </Icon>
+                        <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 360, maxHeight: 360, position: 'relative', }}>
+                            <IconButton aria-label="percentage" sx={{ position: 'absolute', top: 0, left: 0, backgroundColor: red[500], borderRadius: '', padding: '2px', px: 2, textAlign: 'center', ml: 1 }}>
+                                <Typography component={'p'} sx={{ fontSize: 12, color: 'white' }} > -13%</Typography>
+                            </IconButton>
+                            <IconButton aria-label="add to favorites" sx={{ position: 'absolute', top: -2, right: 0, zIndex: 3, color: red[500] }}>
+                                <FavoriteIcon sx={{ fontSize: 20, }} />
+                            </IconButton>
+
                             <CardMedia
                                 component="img"
                                 height=""
