@@ -14,7 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Grid, Stack } from '@mui/material';
+import { Grid, Icon, Stack } from '@mui/material';
 
 const FlashCard = ({ data }) => {
     console.log(data);
@@ -24,40 +24,28 @@ const FlashCard = ({ data }) => {
                 alignItems="center">
                 {data.map((products, index) => (
                     <Grid item key={index}>
-                        <Card sx={{ maxWidth: 255 }}>
-                            <CardHeader
-                                avatar={
-                                    <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                        R
-                                    </Avatar>
-                                }
-                                action={
-                                    <IconButton aria-label="settings">
-                                        <MoreVertIcon />
-                                    </IconButton>
-                                }
-                                title="Shrimp and Chorizo Paella"
-                                subheader="September 14, 2016"
-                            />
+                        <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 360, maxHeight: 360, position: 'relative' }}>
+                            <Icon aria-label="add to favorites" sx={{ position: 'absolute', top: -7, right: 0, }}>
+                                <FavoriteIcon />
+                            </Icon>
+                            <Icon aria-label="add to favorites" sx={{ position: 'absolute', top: 0, left: 0, backgroundColor: red }}>
+                                <p className='text-xs bg-red-300 py-2 rounded-full text-white'>13%</p>
+                            </Icon>
                             <CardMedia
                                 component="img"
                                 height=""
                                 image={products?.imagesUrl}
                                 alt="card image"
-                                sx={{ maxHeight: 200, borderRadius: 2, minHeight: 200 }}
+                                sx={{ maxHeight: 200, borderRadius: 2, minHeight: 200, padding: 4, }}
 
                             />
                             <CardContent>
-                                <Typography variant="body2" color="text.secondary">
-                                    This impressive paella is a perfect party dish and a fun meal to cook
-                                    together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                    if you like.
+                                <Typography variant="" color="text.secondary">
+                                    {products?.title}
                                 </Typography>
                             </CardContent>
                             <CardActions disableSpacing>
-                                <IconButton aria-label="add to favorites">
-                                    <FavoriteIcon />
-                                </IconButton>
+
                                 <IconButton aria-label="share">
                                     <ShareIcon />
                                 </IconButton>
