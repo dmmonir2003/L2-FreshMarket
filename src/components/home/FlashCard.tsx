@@ -25,7 +25,11 @@ const FlashCard = ({ data }) => {
                 {data.map((products, index) => (
                     <Grid item key={index}>
                         <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 360, maxHeight: 360, position: 'relative', }}>
-                            <IconButton aria-label="percentage" sx={{ position: 'absolute', top: 0, left: 0, backgroundColor: red[500], borderRadius: '', padding: '2px', px: 2, textAlign: 'center', ml: 1 }}>
+                            <IconButton aria-label="percentage" sx={{
+                                position: 'absolute', top: 0, left: 0, backgroundColor: red[500], '&:hover': {
+                                    backgroundColor: red[500],
+                                }, borderRadius: '', padding: '2px', px: 2, textAlign: 'center', ml: 1
+                            }}>
                                 <Typography component={'p'} sx={{ fontSize: 12, color: 'white' }} > -13%</Typography>
                             </IconButton>
                             <IconButton aria-label="add to favorites" sx={{ position: 'absolute', top: -2, right: 0, zIndex: 3, color: red[500] }}>
