@@ -1,6 +1,7 @@
-import { Stack, Typography } from '@mui/material';
+import { Button, Stack, Typography } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
+import FlashCard from './FlashCard';
 
 const FlashCardSection = () => {
     const Data = [
@@ -53,10 +54,12 @@ const FlashCardSection = () => {
         <div>
             <Stack justifyContent='space-between' my={10} direction='row'>
                 <Typography variant='h3' component={'h3'}>Flash Sale</Typography>
-                <Link href='/flash-sale'>See All</Link>
+                <Button variant='contained'  ><Link href='/flash-sale'>See All</Link></Button>
 
             </Stack>
-
+            <Stack  >
+                <FlashCard data={Data}></FlashCard>
+            </Stack>
         </div>
     );
 };
