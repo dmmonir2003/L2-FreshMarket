@@ -14,7 +14,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Grid, Icon, Stack } from '@mui/material';
+import { Box, Grid, Icon, Stack } from '@mui/material';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const FlashCard = ({ data }) => {
     console.log(data);
@@ -45,12 +46,24 @@ const FlashCard = ({ data }) => {
 
                             />
                             <CardContent sx={{ mb: 0 }}>
-                                <Typography color="text.secondary">
-                                    {products?.title}
-                                </Typography>
-                                <Typography>
-                                    <span className='line-through'>$2000</span> $1500
-                                </Typography>
+                                <Stack direction='row' alignItems='end' justifyContent='space-between'>
+
+
+                                    <Box>
+                                        <Typography color="text.secondary">
+                                            {products?.title}
+                                        </Typography>
+                                        <Typography>
+                                            <span className='line-through'>$2000</span> $1500
+                                        </Typography>
+
+                                    </Box>
+                                    <Box>
+                                        <AddCircleOutlineIcon></AddCircleOutlineIcon>
+                                    </Box>
+                                </Stack>
+
+
 
                             </CardContent>
 
