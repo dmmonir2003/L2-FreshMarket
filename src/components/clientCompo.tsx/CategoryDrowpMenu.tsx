@@ -43,7 +43,7 @@ const CategoryDrowpMenu = () => {
                     }}
                 >
                     <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                    <MenuItem onClick={handleClose}>best meet</MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Link href={'/products'}>Products</Link>
                     </MenuItem>
