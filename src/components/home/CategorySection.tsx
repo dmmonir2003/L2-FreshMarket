@@ -19,33 +19,33 @@ const CategorySection = () => {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit voluptas mollitia praesentium assumenda dolor voluptate quasi sit, nemo facilis!
                 </Typography>
             </Box>
-
-            <Grid container spacing={4} justifyContent="center">
+            <Grid container spacing={4} justifyContent="center" >
                 {furnitureData.map((item, index) => (
-                    <Grid item xs={12} md={4} key={index}>
+                    <Grid item xs={12} md={4} key={index} alignItems="center" justifyContent="center">
                         <Box
-                            bgcolor={index % 2 === 1 ? "red.500" : "green.500"} // Alternate bgcolor based on index
-                            p={2}
-                            textAlign="center"
-                            sx={{ minHeight: index % 2 === 1 ? 100 : 216, backgroundColor: index % 2 === 1 ? red[500] : green[500], marginBottom: index % 2 === 1 ? 2 : 0 }}
+                            sx={{
+                                backgroundColor: index % 2 === 0 ? green[500] : red[500],
+                                p: 2,
+                                textAlign: "center",
+                                ...(index === 0 || index === 2) && { minHeight: 216, }
+                            }}
                         >
-                            {index % 2 === 1 ? "single row" : "Dubble row"} {/* Adjust text based on index */}
+                            {index === 0 || index === 2 ? (
+                                <Typography variant="h6" component="p">
+                                    {item.category}
+                                </Typography>
+                            ) : (
+                                <Typography variant="body1" component="p">
+                                    {item.category}
+                                </Typography>
+                            )}
                         </Box>
-                        {index % 2 === 1 && (
-                            <Box
-                                bgcolor={red[500]}
-                                p={2}
-                                textAlign="center"
-                                sx={{ minHeight: 100, backgroundColor: red[500] }}
-                            >
-                                row
-                            </Box>
-                        )}
                     </Grid>
                 ))}
             </Grid>
 
-            {/* <Grid container spacing={4} justifyContent="center">
+            {/* 
+            <Grid container spacing={4} justifyContent="center">
                 <Grid item xs={12} md={4}>
                     <Box bgcolor="green.500" p={2} textAlign="center" sx={{ minHeight: 216, backgroundColor: green[500] }}>
                         Dubble row
