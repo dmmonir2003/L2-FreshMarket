@@ -1,5 +1,6 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Button } from "@mui/material";
 import { green, red } from "@mui/material/colors";
+import Link from "next/link";
 
 const CategorySection = () => {
     const furnitureData = [
@@ -9,8 +10,9 @@ const CategorySection = () => {
         { category: 'Bedroom Furniture' }
     ];
 
+
     return (
-        <div className="">
+        <>
             <Box my={10}>
                 <Typography variant="h4" component='h4' textAlign='center' fontWeight={700}>
                     Top Categories
@@ -19,70 +21,37 @@ const CategorySection = () => {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit voluptas mollitia praesentium assumenda dolor voluptate quasi sit, nemo facilis!
                 </Typography>
             </Box>
-            <Grid container spacing={4} justifyContent="center" >
+
+            <div className="grid md:grid-cols-3 gap-4  justify-center ">
                 {furnitureData.map((item, index) => (
-                    <Grid item xs={12} md={4} key={index} alignItems="center" justifyContent="center">
-                        <Box
-                            sx={{
-                                backgroundColor: index % 2 === 0 ? green[500] : red[500],
-                                p: 2,
-                                textAlign: "center",
-                                ...(index === 0 || index === 2) && { minHeight: 216, }
-                            }}
-                        >
-                            {index === 0 || index === 2 ? (
-                                <Typography variant="h6" component="p">
-                                    {item.category}
-                                </Typography>
-                            ) : (
-                                <Typography variant="body1" component="p">
-                                    {item.category}
-                                </Typography>
-                            )}
-                        </Box>
-                    </Grid>
+                    <div key={index} className={` ${index === 0 || index === 2 ? 'row-span-2 h-[300px] bg-gray-400 rounded-xl border border-purple-900' : 'rounded-xl border bg-red-400  border-purple-900'}`}>
+                        <Typography variant="h6" component="p" className="text-black">
+                            {item.category}
+                        </Typography>
+
+                    </div>
                 ))}
-            </Grid>
-
-            {/* 
-            <Grid container spacing={4} justifyContent="center">
-                <Grid item xs={12} md={4}>
-                    <Box bgcolor="green.500" p={2} textAlign="center" sx={{ minHeight: 216, backgroundColor: green[500] }}>
-                        Dubble row
-                    </Box>
-                </Grid>
-
-                <Grid item xs={12} md={4} spacing={2}>
-                    <Box bgcolor="red.500" p={2} textAlign="center" sx={{ minHeight: 100, backgroundColor: red[500], marginBottom: 2 }}>
-                        single row
-                    </Box>
-                    <Box bgcolor="red[500]" p={2} textAlign="center" sx={{ minHeight: 100, backgroundColor: red[500] }}>
-                        row
-                    </Box>
-                </Grid>
-
-                <Grid item xs={12} md={4}>
-                    <Box p={2} textAlign="center" sx={{ minHeight: 216, backgroundColor: green[500] }}>
-                        Dubble row
-                    </Box>
-                </Grid>
-            </Grid> */}
+            </div>
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
+                <Button
+                    variant='contained'
+                    sx={{
+                        borderRadius: '45%',
+                        backgroundColor: red[500],
+                        '&:hover': { backgroundColor: 'red' } // Corrected syntax for hover state
+                    }}
+                >
+                    <Link href={'/products'}>View All</Link>
+                </Button>
+            </Box>
 
 
 
-            {/* <div className="grid md:grid-cols-3 gap-4 ">
-                <div className=" row-span-2 bg-green-500 ">Dubble row </div>
-
-
-                <div className=" bg-red-500 ">single row </div>
-                <div className="  bg-purple-400 row-span-2"> row</div>
-
-
-                <div className=" bg-gray-500 ">Dubble row </div>
-            </div> */}
-
-        </div >
+        </>
     );
 };
 
 export default CategorySection;
+
+
+// sm:h-[300px] md:h-[138px]
