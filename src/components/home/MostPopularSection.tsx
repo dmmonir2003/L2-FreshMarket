@@ -60,6 +60,9 @@ const MostPopularSection = () => {
                     <Typography variant='h5' component={'h5'}>Most Popular Products</Typography>
                     <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero enim magni fugit reiciendis rerum dolorem.</Typography>
                 </Box>
+
+
+
                 <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
                     <Button
                         variant='contained'

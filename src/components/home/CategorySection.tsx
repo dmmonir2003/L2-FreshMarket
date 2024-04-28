@@ -1,14 +1,33 @@
 import { Box, Typography, Grid, Button } from "@mui/material";
 import { green, red } from "@mui/material/colors";
 import Link from "next/link";
+import Card from "../clientCompo.tsx/Card";
 
 const CategorySection = () => {
-    const furnitureData = [
-        { category: 'Living Room Furniture' },
-        { category: 'Dining Room Furniture' },
-        { category: 'Sofa Sets' },
-        { category: 'Bedroom Furniture' }
+    // const Data = [
+    //     { category: 'Living Room Furniture' },
+    //     { category: 'Dining Room Furniture' },
+    //     { category: 'Sofa Sets' },
+    //     { category: 'Bedroom Furniture' }
+    // ];
+    const images = [
+        {
+            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
+            title: 'Breakfast',
+            width: '40%',
+        },
+        {
+            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
+            title: 'Burgers',
+            width: '30%',
+        },
+        {
+            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
+            title: 'Camera',
+            width: '30%',
+        },
     ];
+
 
 
     return (
@@ -23,11 +42,12 @@ const CategorySection = () => {
             </Box>
 
             <div className="grid md:grid-cols-3 gap-4  justify-center ">
-                {furnitureData.map((item, index) => (
-                    <div key={index} className={` ${index === 0 || index === 2 ? 'row-span-2 h-[300px] bg-gray-400 rounded-xl border border-purple-900' : 'rounded-xl border bg-red-400  border-purple-900'}`}>
-                        <Typography variant="h6" component="p" className="text-black">
-                            {item.category}
-                        </Typography>
+                {images.map((item, index) => (
+                    <div key={index} className={`${index === 0 || index === 2 ? 'row-span-2 h-[300px] bg-gray-400 rounded-xl border border-purple-900' : 'rounded-xl border bg-red-400  border-purple-900'}`}>
+
+
+                        <Card></Card>
+
 
                     </div>
                 ))}

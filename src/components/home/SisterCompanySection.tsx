@@ -16,14 +16,14 @@ const SisterCompanySection = () => {
 
     return (
         <div>
-            <Stack my={15} direction='row' height={60} alignItems='center' justifyContent='space-around'>
+            <Stack mt={15} direction='row' height={60} alignItems='center' justifyContent='space-around'>
                 {imageUrls.map((imageUrl, index) => (
                     <Image
                         key={index}
                         src={imageUrl}
                         height={40}
                         width={100}
-                        alt={`Company Logo ${index + 1}`} // Add descriptive alt text
+                        alt={`Company Logo ${index + 1}`}
                     />
                 ))}
             </Stack>
