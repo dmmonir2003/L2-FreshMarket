@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div >
             <Stack>
-                <Box></Box>
+                <Box>hi</Box>
                 <Box></Box>
                 <Box></Box>
                 <Box></Box>

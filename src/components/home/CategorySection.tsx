@@ -4,12 +4,7 @@ import Link from "next/link";
 import Card from "../clientCompo.tsx/Card";
 
 const CategorySection = () => {
-    // const Data = [
-    //     { category: 'Living Room Furniture' },
-    //     { category: 'Dining Room Furniture' },
-    //     { category: 'Sofa Sets' },
-    //     { category: 'Bedroom Furniture' }
-    // ];
+
     const images = [
         {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
@@ -24,6 +19,11 @@ const CategorySection = () => {
         {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
             title: 'Camera',
+            width: '30%',
+        },
+        {
+            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
+            title: 'Camer',
             width: '30%',
         },
     ];
@@ -41,17 +41,37 @@ const CategorySection = () => {
                 </Typography>
             </Box>
 
-            <div className="grid md:grid-cols-3 gap-4  justify-center ">
-                {images.map((item, index) => (
-                    <div key={index} className={`${index === 0 || index === 2 ? 'row-span-2 h-[300px] bg-gray-400 rounded-xl border border-purple-900' : 'rounded-xl border bg-red-400  border-purple-900'}`}>
+            {/* Grid container with responsive columns */}
+            <Grid container spacing={3} justifyContent="center">
+                {/* First column */}
+                <Grid item xs={12} md={4}>
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} >
+                            <Card item={images[0]} customHeight={'420px'} />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                {/* Second column */}
+                <Grid item xs={12} md={4}>
+                    <Grid container spacing={2} >
+                        <Grid item xs={12} >
+                            <Card item={images[1]} customHeight={'200px'} />
+                        </Grid>
+                        <Grid item xs={12} >
+                            <Card item={images[3]} customHeight={'200px'} />
+                        </Grid>
+                    </Grid>
+                </Grid>
 
+                <Grid item xs={12} md={4} >
+                    <Grid container spacing={3}>
+                        <Grid item xs={12}  >
+                            <Card item={images[2]} customHeight={'420px'} />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
 
-                        <Card></Card>
-
-
-                    </div>
-                ))}
-            </div>
             <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
                 <Button
                     variant='contained'
