@@ -34,21 +34,41 @@
 // export default Card;
 
 
-"use client"
-import { Box } from '@mui/material';
-import React from 'react';
+
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import ButtonBase from '@mui/material/ButtonBase';
+import Typography from '@mui/material/Typography';
+
+import Link from '@mui/material/Link';
+
 
 const Card = ({ item, customHeight }) => {
+
+
+
+
+
+
+
     // No need for itemClassMap or inline styles
 
     return (
-        <Box sx={{
-            height: {
-                xs: 200,
-                md: customHeight
-            }
-        }} className={`md:h-[${customHeight}] bg-cover bg-red-500 bg-center rounded-lg shadow-md overflow-hidden text-white flex flex-col justify-center items-center`}>
-            <h2 className="text-xl text-black font-bold">{item.title}</h2>
+        <Box
+
+
+            sx={{
+                height: {
+                    xs: 200,
+                    md: customHeight
+                },
+                backgroundImage: `url(${item.url})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+
+            }} className={` bg-cover  bg-center rounded-lg shadow-md overflow-hidden  flex flex-col justify-center items-center `}>
+            <Link href={item?.pathName}>{item.title}</Link>
         </Box>
     );
 };
