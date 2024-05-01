@@ -10,7 +10,7 @@ const CategorySection = () => {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
             title: 'Breakfast',
             width: '40%',
-            pathName: '/products/Breakfast',
+
         },
         {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
@@ -79,7 +79,7 @@ const CategorySection = () => {
                     sx={{
                         borderRadius: '45%',
                         backgroundColor: red[500],
-                        '&:hover': { backgroundColor: 'red' } // Corrected syntax for hover state
+                        '&:hover': { backgroundColor: 'red' }
                     }}
                 >
                     <Link href={'/products'}>View All</Link>
