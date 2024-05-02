@@ -1,60 +1,155 @@
 import SisterCompanySection from '@/components/home/SisterCompanySection';
-import { Box, Stack, Typography } from '@mui/material';
+
 import Link from 'next/link';
 import React from 'react';
-
+import { Grid, Typography, Stack } from '@mui/material';
 const Footer = () => {
     return (
         <div >
             <SisterCompanySection></SisterCompanySection>
-            <Stack minHeight={300} direction='row' justifyContent='space-around' sx={{
-                backgroundColor: "#1c1c1c"
+
+            <Stack minHeight={300} spacing={3} direction='row' useFlexGap flexWrap="wrap" justifyContent='space-around' sx={{
+                backgroundColor: "#1c1c1c",
+                mx: 'auto',
+                width: 'full'
             }}>
-                <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                    Title
-                </Typography>
-                    <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                        Title
+
+
+                <Stack py={5}>
+
+                    <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                        Title 1
                     </Typography>
-                        <Stack py={5}>
+                    <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                        Title 33333
+                    </Typography></Link>
 
-                            <Link href='/products'>  <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                                Title
-                            </Typography></Link>
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                                Title
-                            </Typography>
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                                Title
-                            </Typography>
+                </Stack>
+                <Stack py={5}>
 
-                        </Stack>
-                        <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='white'>
+                    <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                        Title 2
+                    </Typography>
+                    <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                        Title 33333
+                    </Typography></Link>
+
+                </Stack>
+                <Stack py={5}>
+
+                    <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                        Title 3
+                    </Typography>
+                    <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                        Title 33333
+                    </Typography></Link>
+
+                </Stack>
+
+                <Stack py={5}>
+
+                    <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                        Title 4
+                    </Typography>
+                    <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                        Title 33333
+                    </Typography></Link>
+
+                </Stack>
+                <Stack py={5}>
+
+                    <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                        Title 4
+                    </Typography>
+                    <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                        Title 33333
+                    </Typography></Link>
+
+                </Stack>
+
+
+
+            </Stack>
+
+            {/* <Grid
+                container
+                spacing={4}
+                justifyContent="space-around"
+                sx={{
+                    backgroundColor: "#1c1c1c",
+                    mx: 'auto',
+                    width: 'full'
+                }}
+            >
+                <Grid item xs={12} md={4}>
+                    <Stack py={5}>
+                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                            Title 1
+                        </Typography>
+                        <Link href={'/products'}>
+                            <Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                                Title 33333
+                            </Typography>
+                        </Link>
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={4}>
+                    <Stack py={5}>
+                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
                             Title 2
                         </Typography>
+                        <Link href={'/products'}>
+                            <Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                                Title 33333
+                            </Typography>
+                        </Link>
+                    </Stack>
+                </Grid>
 
-                        </Stack>
-                        <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='white'>
+                <Grid item xs={12} md={4}>
+                    <Stack py={5}>
+                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
                             Title 3
                         </Typography>
+                        <Link href={'/products'}>
+                            <Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                                Title 33333
+                            </Typography>
+                        </Link>
+                    </Stack>
+                </Grid>
 
-                        </Stack>
-                        <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='white'>
+                <Grid item xs={12} md={4}>
+                    <Stack py={5}>
+                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
                             Title 4
                         </Typography>
+                        <Link href={'/products'}>
+                            <Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                                Title 33333
+                            </Typography>
+                        </Link>
+                    </Stack>
+                </Grid>
 
-                        </Stack>
-                        <Stack py={5}> <Typography fontSize={20} fontWeight={500} color='white'>
+                <Grid item xs={12} md={6}>
+                    <Stack py={5}>
+                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
                             Title 5
                         </Typography>
-
-                        </Stack>
-
-
-
+                        <Link href={'/products'}>
+                            <Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                                Title 33333
+                            </Typography>
+                        </Link>
                     </Stack>
-                </div>
-                
+                </Grid>
+            </Grid> */}
+
+
+        </div >
+    );
 };
 
-                export default Footer;
+export default Footer;
