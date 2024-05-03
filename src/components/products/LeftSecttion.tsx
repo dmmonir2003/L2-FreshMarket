@@ -1,6 +1,6 @@
 import { Box, Checkbox, Divider, FormControlLabel, FormGroup, Stack, Typography } from '@mui/material';
 import React from 'react';
-
+import ArrowDropDownTwoToneIcon from '@mui/icons-material/ArrowDropDownTwoTone';
 const LeftSecttion = () => {
     return (
         <div>
@@ -19,16 +19,13 @@ const LeftSecttion = () => {
 
                 </Box>
                 <Box p={3} border={1} borderColor='black' borderRadius={2} width='230px'>
-                    <Divider sx={{ height: '100%', marginRight: '10px' }} color='black' orientation="vertical" />   <Typography>Price  Range</Typography>
+                    <Divider sx={{ height: '100%', marginRight: '10px' }} color='black' orientation="vertical" />   <Typography>Categories </Typography>
 
-                    <FormGroup mt={2}>
-                        <FormControlLabel control={<Checkbox defaultChecked />} label="$20.00 - $ 50.00" />
-                        <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
-                        <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
-                        <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
-                        <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
-
-                    </FormGroup>
+                    <Box mt={2} >
+                        <Typography >meat <ArrowDropDownTwoToneIcon ></ArrowDropDownTwoToneIcon> </Typography>
+                        <Typography>fishes <ArrowDropDownTwoToneIcon></ArrowDropDownTwoToneIcon> </Typography>
+                        <Typography>Meat  <ArrowDropDownTwoToneIcon></ArrowDropDownTwoToneIcon> </Typography>
+                    </Box>
 
                 </Box>
 
