@@ -40,11 +40,10 @@ const ProductDetailPage = () => {
                                 <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
                                     <Image alt='small image' height={100} width={150} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
                                 </Box>
-
-
-
                             </Stack>
-                            <Stack> </Stack>
+                            <Stack>
+                                <Image alt='small image' height={330} width={330} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
+                            </Stack>
                         </Stack>
                     </Grid>
                     <Grid item xs={12} sm={6} sx={{ bg: green[500] }}>
