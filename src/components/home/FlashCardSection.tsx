@@ -2,6 +2,7 @@ import { Button, Stack, Typography } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
 import FlashCard from './FlashCard';
+import { red } from '@mui/material/colors';
 
 const FlashCardSection = () => {
     const Data = [
@@ -54,7 +55,18 @@ const FlashCardSection = () => {
         <div>
             <Stack justifyContent='space-between' my={10} direction='row'>
                 <Typography variant='h3' component={'h3'}>Flash Sale</Typography>
-                <Button variant='contained'  ><Link href='/flash-sale'>See All</Link></Button>
+
+                <Button
+                    variant='contained'
+                    sx={{
+                        borderRadius: '45%',
+                        backgroundColor: red[500],
+                        '&:hover': { backgroundColor: 'red' }
+                    }}
+                >
+                    <Link href='/flash-sale'>See All</Link>
+                </Button>
+
 
             </Stack>
             <Stack  >
