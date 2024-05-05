@@ -11,7 +11,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Image from 'next/image';
 import { green, red } from '@mui/material/colors';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
-import ElectricRickshawIcon from '@mui/icons-material/ElectricRickshaw';
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 const ProductDetailPage = () => {
 
@@ -88,10 +88,22 @@ const ProductDetailPage = () => {
                         </Box>
 
                         <Stack direction='row' gap={2} alignItems='center'> <LocalShippingIcon></LocalShippingIcon> <Typography>Free worldwide shipping on all orders over $100</Typography></Stack>
-
+                        <Stack mt={1} direction='row' gap={2} alignItems='center'> <HourglassTopIcon></HourglassTopIcon> <Typography>Delivers in: 3-7 Working Days Shipping & Return</Typography></Stack>
                     </Grid>
 
                 </Grid>
+
+                <Box bgcolor={'#f5f5f5'} my={10} py={5} px={2}>
+                    <Typography my={2} fontSize={20} fontWeight={600}>Description</Typography>
+                    <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Typography>
+                    <Box my={2} ml={1}>
+                        <Typography component={'li'}>Lorem ipsum dolor sit amet, adipi scing elit</Typography>
+                        <Typography component={'li'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+                        <Typography component={'li'}>Lorem ipsum dolor sit amet, adipi scing elit</Typography>
+                        <Typography component={'li'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+
+                    </Box>
+                </Box>
             </Box>
 
 
