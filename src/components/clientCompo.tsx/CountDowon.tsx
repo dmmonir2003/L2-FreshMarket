@@ -27,6 +27,8 @@
 
 "use client";
 
+import { Stack, Typography } from "@mui/material";
+import { red } from "@mui/material/colors";
 import { useEffect, useState } from "react";
 
 const CountdownTimer: React.FC = () => {
@@ -55,13 +57,15 @@ const CountdownTimer: React.FC = () => {
     }, []);
 
     return (
-        <div className="text-2xl font-bold flex justify-center items-center gap-4">
-            <h2>End Time: </h2>
-            <p className="p-2 bg-red-300 rounded">{timeLeft.days}D</p>
-            <p className="p-2 bg-red-300 rounded">{timeLeft.hours}H</p>
-            <p className="p-2 bg-red-300 rounded">{timeLeft.minutes}M</p>
-            <p className="p-2 bg-red-300 rounded">{timeLeft.seconds}S</p>
-        </div>
+
+        <Stack direction='row' gap={1} bgcolor={red[400]} height={100} alignItems='center' borderColor={red} p={1} borderRadius={2} >
+            <Typography color={"white"} fontSize={18} fontWeight={700}>End Time: </Typography>
+            <Typography color={"white"}>{timeLeft.days}D</Typography>
+            <Typography color={"white"}>{timeLeft.hours}H</Typography>
+            <Typography color={"white"}>{timeLeft.minutes}M</Typography>
+            <Typography color={"white"}>{timeLeft.seconds}S</Typography>
+        </Stack>
+
     );
 };
 

@@ -54,7 +54,7 @@ const FlashSaleProductsPage = () => {
     return (
         <Container>
             <Stack direction='row' justifyContent='space-between' alignItems='center'>
-                <Box my={3}>
+                <Box my={3} width={'100vh'}>
                     <Typography fontSize={30} fontWeight={700}>Flash Sale</Typography>
                     <Typography fontSize={15} mt={2} fontWeight={700}>Showing 1–12 of 24 item(s)</Typography>
                     <Typography >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
