@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import { Box, Checkbox, Grid, Icon, Stack } from '@mui/material';
+import { Box, Checkbox, Divider, Grid, Icon, Stack } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 import CardHover from '../clientCompo.tsx/CardHover';
@@ -46,8 +46,9 @@ const FlashCard = ({ data }) => {
                                 sx={{ maxHeight: 250, borderRadius: 2, minHeight: 250, pt: 4, px: 4, }}
 
                             />
+                            <Divider sx={{ mt: 1 }}></Divider>
                             <CardContent sx={{ mb: 3, position: 'relative' }}>
-                                <Stack direction='row' alignItems='end' justifyContent='space-between' sx={{}}>
+                                <Stack direction='row' alignItems='center' justifyContent='space-between' sx={{}}>
 
                                     <Box>
                                         <Typography color="text.secondary">
@@ -65,7 +66,7 @@ const FlashCard = ({ data }) => {
                                         aria-label="show details"
                                         sx={{
                                             position: 'absolute',
-                                            bottom: -22,
+                                            bottom: -20,
                                             right: 55,
                                             zIndex: 1,
 
