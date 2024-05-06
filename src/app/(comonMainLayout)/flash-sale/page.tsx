@@ -1,4 +1,5 @@
-import CountDowon from '@/components/clientCompo.tsx/CountDowon';
+import CountdownTimer from '@/components/clientCompo.tsx/CountDowon';
+
 import FlashCard from '@/components/home/FlashCard';
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
@@ -61,7 +62,7 @@ const FlashSaleProductsPage = () => {
                 </Box>
 
                 <Box>
-                    <CountDowon></CountDowon>
+                    <CountdownTimer></CountdownTimer>
                 </Box>
             </Stack>
 
