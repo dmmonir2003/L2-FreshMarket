@@ -66,12 +66,13 @@ const FlashCard = ({ data }) => {
                                         sx={{
                                             position: 'absolute',
                                             bottom: -22,
-                                            right: 40,
+                                            right: 55,
                                             zIndex: 1,
+
 
                                         }}
                                     >
-                                        <Link href='/products/1'>Show Details</Link>
+                                        <Typography fontSize={18}> <Link href='/products/1'>Show Details</Link></Typography>
                                     </IconButton>
                                 </Stack>
 

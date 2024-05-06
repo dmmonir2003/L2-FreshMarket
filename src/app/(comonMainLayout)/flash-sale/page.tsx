@@ -1,3 +1,4 @@
+import CountDowon from '@/components/clientCompo.tsx/CountDowon';
 import FlashCard from '@/components/home/FlashCard';
 import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
@@ -51,12 +52,18 @@ const FlashSaleProductsPage = () => {
 
     return (
         <Container>
-            <Box my={3}>
-                <Typography fontSize={30} fontWeight={700}>Flash Sale</Typography>
-                <Typography fontSize={15} mt={2} fontWeight={700}>Showing 1–12 of 24 item(s)</Typography>
-                <Typography >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+            <Stack direction='row' justifyContent='space-between' alignItems='center'>
+                <Box my={3}>
+                    <Typography fontSize={30} fontWeight={700}>Flash Sale</Typography>
+                    <Typography fontSize={15} mt={2} fontWeight={700}>Showing 1–12 of 24 item(s)</Typography>
+                    <Typography >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
 
-            </Box>
+                </Box>
+
+                <Box>
+                    <CountDowon></CountDowon>
+                </Box>
+            </Stack>
 
             <Box my={3}>
 
