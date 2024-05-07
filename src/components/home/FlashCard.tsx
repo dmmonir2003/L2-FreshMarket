@@ -69,11 +69,13 @@ const FlashCard = ({ data }) => {
                                             bottom: -20,
                                             right: 55,
                                             zIndex: 1,
+                                            backgroundColor: red[500],
+                                            '&:hover': { backgroundColor: 'red' }
 
 
                                         }}
                                     >
-                                        <Typography fontSize={18}> <Link href='/products/1'>Show Details</Link></Typography>
+                                        <Typography fontSize={18} color={'white'}> <Link href='/products/1'>Show Details</Link></Typography>
                                     </IconButton>
                                 </Stack>
 
