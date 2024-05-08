@@ -1,14 +1,24 @@
 import Sidebar from "@/components/shared/Sidebar.tsx/Sidebar";
+import { Box, Grid } from "@mui/material";
 
 
 
 const MainLayoutPage = ({ children }) => {
     return (
-        <div className="grid grid-cols-12">
-            <div className="col-span-3"><Sidebar></Sidebar></div>
-            <div className="col-span-9">{children}</div>
+        <>
+            <Grid container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 12, md: 12 }}>
+                <Grid item sm={3}>
+                    <Sidebar></Sidebar>
+                </Grid>
+                <Grid item sm={9}>
+                    <Box>{children}</Box>
+                </Grid>
 
-        </div>
+
+            </Grid>
+
+
+        </>
     );
 };
 

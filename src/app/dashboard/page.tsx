@@ -1,10 +1,12 @@
+import DeshbordMain from '@/components/Deshbord/DeshbordMain';
+import { Container } from '@mui/material';
 import React from 'react';
 
 const DashbordPage = () => {
     return (
-        <div className=''>
-            <h2>this is content in deshbord</h2>
-        </div>
+        <Container>
+            <DeshbordMain></DeshbordMain>
+        </Container>
     );
 };
 
