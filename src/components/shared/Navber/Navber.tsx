@@ -33,6 +33,7 @@ const Navber = () => {
                             <Typography fontWeight={600} component={Link} href={'/flash-sale'}>Flash Sale </Typography>
                             <Typography fontWeight={600} component={Link} href={'/about-us'}>About Us </Typography>
                             <Typography fontWeight={600} component={Link} href={'/contact-us'}>Contact Us </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/dashboard'}>Dashboard </Typography>
                         </Stack>
 
                         <ToggoleButtonInNav>

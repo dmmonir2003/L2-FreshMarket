@@ -60,6 +60,9 @@ const ToggleButtonInNav = () => {
                 <MenuItem>
                     <Typography fontWeight={600} component={Link} href={'/contact-us'}>Contact Us</Typography>
                 </MenuItem>
+                <MenuItem>
+                    <Typography fontWeight={600} component={Link} href={'/dashboard'}>Dashboard</Typography>
+                </MenuItem>
             </Menu>
         </div>
     );

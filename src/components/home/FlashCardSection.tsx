@@ -4,7 +4,7 @@ import React from 'react';
 import FlashCard from './FlashCard';
 import { red } from '@mui/material/colors';
 
-const FlashCardSection = () => {
+const FlashCardSection = async () => {
     const Data = [
         {
             imagesUrl: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQz0CoRtQkrNS5X8fVWcVVyMyfgkbneCTVesp4oKhAF_lCaRMOb",
@@ -48,6 +48,16 @@ const FlashCardSection = () => {
     ];
 
 
+    const res = await fetch('http://localhost:5000/api/products', {
+
+        next: {
+            revalidate: 30
+        }
+    })
+
+    const products = await res.json();
+
+    const data = products?.slice(0, 6);
 
 
 
@@ -70,7 +80,7 @@ const FlashCardSection = () => {
 
             </Stack>
             <Stack  >
-                <FlashCard data={Data}></FlashCard>
+                <FlashCard data={data}></FlashCard>
             </Stack>
         </div>
     );

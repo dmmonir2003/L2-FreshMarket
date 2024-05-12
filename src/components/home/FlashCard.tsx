@@ -41,7 +41,7 @@ const FlashCard = ({ data }) => {
                                 component="img"
                                 height=""
 
-                                image={products?.imagesUrl}
+                                image={products?.image}
                                 alt="card image"
                                 sx={{ maxHeight: 250, borderRadius: 2, minHeight: 250, pt: 4, px: 4, }}
 
