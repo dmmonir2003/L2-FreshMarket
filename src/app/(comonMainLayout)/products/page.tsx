@@ -3,8 +3,21 @@ import RightSection from '@/components/products/RightSection';
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
 
-const ProductsPage = ({ searchParams }) => {
+const ProductsPage = async ({ searchParams }) => {
     console.log(searchParams);
+
+
+    let products;
+    if (searchParams) {
+        const res = await fetch(`http://localhost:5000/api/products/category/${searchParams}`, {
+            cache: 'no-store',
+
+        })
+
+        products = await res.json();
+    }
+
+    console.log(products, '1');
 
     return (
         <div>
@@ -13,7 +26,7 @@ const ProductsPage = ({ searchParams }) => {
                     <LeftSecttion></LeftSecttion>
                 </Grid>
                 <Grid item xs={6} sm={9} md={9} >
-                    <RightSection></RightSection>
+                    <RightSection data={products}></RightSection>
                 </Grid>
 
             </Grid>

@@ -1,5 +1,4 @@
 
-
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,11 +9,28 @@ import { red } from '@mui/material/colors';
 import { Box, Checkbox, Divider, Grid, Icon, Stack } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
-import CardHover from '../clientCompo.tsx/CardHover';
+
 import Link from 'next/link';
 
-const FlashCard = ({ data }) => {
-    console.log(data);
+
+
+interface Product {
+    _id: string;
+    id: number;
+    title: string;
+    image: string;
+    price: number;
+    ratings: number;
+    brand: string;
+    category: string;
+    description: string;
+}
+
+interface Props {
+    data: Product[];
+}
+
+const FlashCard: React.FC<Props> = ({ data }) => {
 
 
 
@@ -43,7 +59,9 @@ const FlashCard = ({ data }) => {
 
                                 image={products?.image}
                                 alt="card image"
-                                sx={{ maxHeight: 250, borderRadius: 2, minHeight: 250, pt: 4, px: 4, }}
+                                sx={{
+                                    maxHeight: 220, borderRadius: 2, minHeight: 220, pt: 4, px: 4,
+                                }}
 
                             />
                             <Divider sx={{ mt: 1 }}></Divider>

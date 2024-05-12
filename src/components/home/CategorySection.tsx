@@ -8,7 +8,7 @@ const CategorySection = () => {
     const images = [
         {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
-            title: 'Breakfast',
+            title: 'Beef-Meat',
             width: '40%',
 
         },
