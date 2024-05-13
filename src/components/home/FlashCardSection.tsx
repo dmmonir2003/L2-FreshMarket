@@ -63,7 +63,7 @@ const FlashCardSection = async () => {
 
     return (
         <div>
-            <Stack justifyContent='space-between' my={10} direction='row'>
+            <Stack justifyContent='space-between' my={30} direction='row'>
                 <Typography variant='h3' component={'h3'}>Flash Sale</Typography>
 
                 <Button

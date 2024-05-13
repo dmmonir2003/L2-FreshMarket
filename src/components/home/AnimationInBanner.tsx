@@ -52,7 +52,7 @@ const AnimationInBanner = () => {
     const [slidesPerView, setSlidesPerView] = useState(1);
 
     return (
-        <Box pb={20}>
+        <Box mt={25}>
 
             <Swiper
 

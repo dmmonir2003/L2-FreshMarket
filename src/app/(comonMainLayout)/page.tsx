@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <Container>
             <Banner></Banner>
-            <FlashCardSection></FlashCardSection>
+            <FlashCardSection ></FlashCardSection>
             <CategorySection></CategorySection>
             <MostPopularSection></MostPopularSection>
 
