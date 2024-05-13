@@ -46,13 +46,16 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useEffect, useState } from 'react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Box } from '@mui/material';
 
 const AnimationInBanner = () => {
     const [slidesPerView, setSlidesPerView] = useState(1);
 
     return (
-        <div>
+        <Box pb={20}>
+
             <Swiper
+
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
@@ -68,19 +71,22 @@ const AnimationInBanner = () => {
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
-                    <Image width={250} height={400} alt='card-image' src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                    <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/8c0c0ee54c56dc72393966ba9bbece1d.webp" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image width={250} height={400} alt='card-image' src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                    <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367693895_706360938193752_872166108487316599_n-1024x1024.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image width={250} height={400} alt='card-image' src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367759056_706360928193753_1051459860970699514_n-1024x1024.jpg" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image width={250} height={400} alt='card-image' src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                    <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/lamb-leg-wooden-board-prepared-cook-tomato-broccoli-salt-top-view-scaled-e1706637505220-800x800.webp" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/d20d778705ddcd9918c8dad776ead01c.webp" />
                 </SwiperSlide>
             </Swiper>
-        </div>
+        </Box>
     );
 };
 

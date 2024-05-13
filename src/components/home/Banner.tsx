@@ -57,9 +57,9 @@ const Banner = () => {
                     position: 'relative',
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url("https://media.istockphoto.com/id/1156301386/photo/various-kind-types-of-salami-speck-and-sausages.jpg?s=612x612&w=0&k=20&c=HR3dPm0OS7vrBq2PqDVlbJ1JDbVFGn15r65vJyRTdUo=")',
+                    backgroundImage: 'url("https://meat-bazar.com/wp-content/uploads/2024/01/raw-meats-with-spices-utensils-rustic-cutting-board-dark-wood-ai-generative-scaled-e1706633454407-1536x765.jpg")',
                     backgroundSize: 'cover',
-                    filter: 'opacity(0.8)',
+                    filter: '',
                     paddingTop: '20px',
 
                 }}
