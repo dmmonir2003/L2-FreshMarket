@@ -8,23 +8,24 @@ const CategorySection = () => {
     const images = [
         {
             url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
-            title: 'Beef-Meat',
+            title: 'Beef Selection',
             width: '40%',
 
         },
         {
-            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
-            title: 'Burgers',
+            url: 'https://api.bengalmeat.com/images/product/4b14a4e9682c46c66d24ae0ce02b20d4.jpg',
+            title: 'Chicken Varieties',
+            width: '30%',
+        },
+
+        {
+            url: 'https://s3-ap-southeast-1.amazonaws.com/com.meenabazaronline.v1.01/homeBanner/2024/1/1/rJV9Jw2ulO6Znk6rToeXi58l1lxvW6jst7XnXbd1___tmd.webp',
+            title: 'Ready To Cooked',
             width: '30%',
         },
         {
-            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
-            title: 'Camera',
-            width: '30%',
-        },
-        {
-            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg',
-            title: 'Camer',
+            url: 'https://meat-bazar.com/wp-content/uploads/2024/02/Whole-Goat-Carcass-800x800.jpg',
+            title: 'Mutton Choices',
             width: '30%',
         },
     ];

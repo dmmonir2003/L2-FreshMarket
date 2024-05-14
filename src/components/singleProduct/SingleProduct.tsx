@@ -8,7 +8,7 @@ import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 const SingleProduct = ({ data }) => {
-    console.log(data);
+
     return (
         <Box mt={5}>
             <Grid container spacing={2}>
@@ -17,17 +17,17 @@ const SingleProduct = ({ data }) => {
                         <Stack direction={{ xs: 'row', sm: 'column' }} gap={2}>
 
                             <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
-                                <Image alt='small image' height={100} width={150} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
+                                <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
                             <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
-                                <Image alt='small image' height={100} width={150} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
+                                <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
                             <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
-                                <Image alt='small image' height={100} width={150} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
+                                <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
                         </Stack>
                         <Stack>
-                            <Image alt='small image' height={330} width={330} src='https://meat-bazar.com/wp-content/uploads/2024/02/Goat-Shoulder-800x800.jpg'></Image>
+                            <Image alt='small image' height={330} width={330} src={data.image}></Image>
                         </Stack>
                     </Stack>
                 </Grid>
@@ -36,7 +36,7 @@ const SingleProduct = ({ data }) => {
                         <Box
 
                         >
-                            <Typography fontSize={30} fontWeight={700}>Double Bed & Side Tables</Typography>
+                            <Typography fontSize={30} fontWeight={700}>{data.title}</Typography>
 
                             <Box
                                 sx={{
@@ -47,9 +47,9 @@ const SingleProduct = ({ data }) => {
 
                                 }}
                             >
-                                <Typography fontSize={20}>$54.98</Typography>
+                                <Typography fontSize={20}>${data.price}</Typography>
                                 <Divider color='black' orientation="vertical" variant="middle" flexItem sx={{ height: 15, width: 2 }} />
-                                <Rating name="half-rating" defaultValue={2.5} precision={0.5} /> <Typography component={'span'}>( 32 review )</Typography>
+                                <Rating name="half-rating" defaultValue={data.ratings} precision={0.5} /> <Typography component={'span'}>( 32 review )</Typography>
                             </Box>
                             <Divider sx={{ my: 2, }} />
 
@@ -61,7 +61,7 @@ const SingleProduct = ({ data }) => {
 
 
                     </Stack>
-                    <Typography>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, amet! Quam maxime eius accusantium beatae facere tenetur nesciunt illo earum. Quam maxime eius accusantium beatae facere tenetur nesciunt illo earum.</Typography>
+                    <Typography>{data.description}</Typography>
 
                     <Box my={4} ml={1}>
                         <Typography component={'li'}>Lorem ipsum dolor sit amet, adipi scing elit</Typography>
@@ -77,7 +77,7 @@ const SingleProduct = ({ data }) => {
             </Grid>
 
             <Box bgcolor={'#f5f5f5'} my={10} py={5} px={2}>
-                <Typography my={2} fontSize={20} fontWeight={600}>Description</Typography>
+                <Typography my={2} fontSize={20} fontWeight={600}>{data.brand}</Typography>
                 <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Typography>
                 <Box my={2} ml={1}>
                     <Typography component={'li'}>Lorem ipsum dolor sit amet, adipi scing elit</Typography>
