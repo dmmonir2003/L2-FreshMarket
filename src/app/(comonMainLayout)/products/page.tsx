@@ -5,7 +5,7 @@ import React from 'react';
 
 const ProductsPage = async ({ searchParams }) => {
     const { category } = searchParams;
-    console.log(category);
+
 
 
     let products;
@@ -24,7 +24,7 @@ const ProductsPage = async ({ searchParams }) => {
         products = await res.json();
     }
 
-    console.log(products, '1');
+
 
     return (
         <div>

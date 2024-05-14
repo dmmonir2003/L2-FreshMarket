@@ -93,7 +93,7 @@ const FlashCard: React.FC<Props> = ({ data }) => {
 
                                         }}
                                     >
-                                        <Typography fontSize={18} color={'white'}> <Link href='/products/1'>Show Details</Link></Typography>
+                                        <Typography fontSize={18} color={'white'}> <Link href={`/products/${products._id}`}>Show Details</Link></Typography>
                                     </IconButton>
                                 </Stack>
 
