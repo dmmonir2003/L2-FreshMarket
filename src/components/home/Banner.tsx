@@ -37,7 +37,7 @@
 
 
 
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import AnimationInBanner from "./AnimationInBanner";
 
@@ -59,28 +59,34 @@ const Banner = () => {
                     height: '100%',
                     backgroundImage: 'url("https://meat-bazar.com/wp-content/uploads/2024/01/raw-meats-with-spices-utensils-rustic-cutting-board-dark-wood-ai-generative-scaled-e1706633454407-1536x765.jpg")',
                     backgroundSize: 'cover',
-                    filter: '',
+
                     paddingTop: '20px',
 
                 }}
             >
 
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'black', opacity: 0.1 }}></div>
 
-                <Typography variant="h4" align="center" sx={{ color: 'green', fontWeight: 700, fontSize: '2rem', zIndex: 1, }}>FreshMarket Explorer: Elevating Grocery Shopping</Typography>
-                <Typography
-                    align="center"
-                    sx={{
-                        color: 'white',
-                        width: {
-                            sm: 400,
-                            md: 800
-                        },
-                        mx: 'auto'
-                    }}
-                >
-                    Welcome to FreshMarket Explorer, your ultimate destination for premium fish and meat groceries. Elevate your grocery shopping experience with our carefully curated selection of the freshest fish and finest meats. Dive into a world of quality and flavor as you explore our wide range of seafood delights and succulent cuts.
-                </Typography>
+
+                <Stack >
+                    <Box pt={20}>
+                        <Typography variant="h4" align="center" sx={{ color: 'green', fontWeight: 700, fontSize: '2rem', zIndex: 1, }}>FreshMarket Explorer: Elevating Grocery Shopping</Typography>
+                        <Typography
+                            align="center"
+                            sx={{
+
+                                color: 'white',
+                                width: {
+                                    sm: 400,
+                                    md: 800
+                                },
+                                mx: 'auto'
+
+                            }}
+                        >
+                            Welcome to FreshMarket Explorer, your ultimate destination for premium fish and meat groceries. Elevate your grocery shopping experience with our carefully curated selection of the freshest fish and finest meats. Dive into a world of quality and flavor as you explore our wide range of seafood delights and succulent cuts.
+                        </Typography>
+                    </Box>
+                </Stack>
 
 
                 <Box sx={{
@@ -91,7 +97,7 @@ const Banner = () => {
                     },
                     mx: 'auto',
                     mt: 5,
-                    pb: 10,
+
                     alignContent: 'center',
                     alignItems: 'center',
                     justifyContent: 'center'

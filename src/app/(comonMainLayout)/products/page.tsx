@@ -4,16 +4,23 @@ import { Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const ProductsPage = async ({ searchParams }) => {
-    console.log(searchParams);
+    const { category } = searchParams;
+    console.log(category);
 
 
     let products;
-    if (searchParams) {
-        const res = await fetch(`http://localhost:5000/api/products/category/${searchParams}`, {
+    if (category) {
+        const res = await fetch(`http://localhost:5000/api/products/category/${category}`, {
             cache: 'no-store',
-
         })
 
+
+        products = await res.json();
+    }
+    else {
+        const res = await fetch(`http://localhost:5000/api/products`, {
+            cache: 'no-store',
+        })
         products = await res.json();
     }
 
