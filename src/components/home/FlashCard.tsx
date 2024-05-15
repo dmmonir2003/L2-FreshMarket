@@ -67,8 +67,6 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                             <Divider sx={{ mt: 1 }}></Divider>
                             <CardContent >
                                 <Stack direction="column"
-
-                                    alignItems=""
                                     spacing={1} >
                                     <Stack direction="row"
                                         justifyContent="space-around"
@@ -87,22 +85,6 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                                         <Box>
                                             <AddCircleOutlineIcon></AddCircleOutlineIcon>
                                         </Box>
-                                        {/* <IconButton
-    aria-label="show details"
-    sx={{
-        position: 'absolute',
-        bottom: -20,
-        right: 55,
-        zIndex: 1,
-        backgroundColor: red[500],
-        '&:hover': { backgroundColor: 'red' }
-
-
-    }}
->
-    <Typography fontSize={14} color={'white'}> <Link href={`/products/${products._id}`}>Show Details</Link></Typography>
-</IconButton> */}
-
 
                                     </Stack>
 
@@ -112,6 +94,7 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                                             sx={{
                                                 borderRadius: '45%',
                                                 backgroundColor: red[500],
+                                                fontSize: '12px',
                                                 '&:hover': { backgroundColor: 'red' }
                                             }}
                                         >
