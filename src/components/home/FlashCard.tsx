@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import { Box, Checkbox, Divider, Grid, Icon, Stack } from '@mui/material';
+import { Box, Button, Checkbox, Divider, Grid, Icon, Stack } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 
@@ -65,39 +65,60 @@ const FlashCard: React.FC<Props> = ({ data }) => {
 
                             />
                             <Divider sx={{ mt: 1 }}></Divider>
-                            <CardContent sx={{ mb: 3, position: 'relative' }}>
-                                <Stack direction='row' alignItems='center' justifyContent='space-between' sx={{}}>
+                            <CardContent >
+                                <Stack direction="column"
 
-                                    <Box>
-                                        <Typography color="text.secondary">
-                                            {products?.title}
-                                        </Typography>
-                                        <Typography>
-                                            <span className='line-through'>$2000</span> $1500
-                                        </Typography>
+                                    alignItems=""
+                                    spacing={1} >
+                                    <Stack direction="row"
+                                        justifyContent="space-around"
+                                        alignItems="center"
+                                        spacing={4} >
 
+                                        <Box>
+                                            <Typography color="text.secondary">
+                                                {products?.title}
+                                            </Typography>
+                                            <Typography>
+                                                <span className='line-through'>$2000</span> $1500
+                                            </Typography>
+
+                                        </Box>
+                                        <Box>
+                                            <AddCircleOutlineIcon></AddCircleOutlineIcon>
+                                        </Box>
+                                        {/* <IconButton
+    aria-label="show details"
+    sx={{
+        position: 'absolute',
+        bottom: -20,
+        right: 55,
+        zIndex: 1,
+        backgroundColor: red[500],
+        '&:hover': { backgroundColor: 'red' }
+
+
+    }}
+>
+    <Typography fontSize={14} color={'white'}> <Link href={`/products/${products._id}`}>Show Details</Link></Typography>
+</IconButton> */}
+
+
+                                    </Stack>
+
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
+                                        <Button
+                                            variant='contained'
+                                            sx={{
+                                                borderRadius: '45%',
+                                                backgroundColor: red[500],
+                                                '&:hover': { backgroundColor: 'red' }
+                                            }}
+                                        >
+                                            <Link href={`/products/${products._id}`}>View details</Link>
+                                        </Button>
                                     </Box>
-                                    <Box>
-                                        <AddCircleOutlineIcon></AddCircleOutlineIcon>
-                                    </Box>
-                                    <IconButton
-                                        aria-label="show details"
-                                        sx={{
-                                            position: 'absolute',
-                                            bottom: -20,
-                                            right: 55,
-                                            zIndex: 1,
-                                            backgroundColor: red[500],
-                                            '&:hover': { backgroundColor: 'red' }
-
-
-                                        }}
-                                    >
-                                        <Typography fontSize={18} color={'white'}> <Link href={`/products/${products._id}`}>Show Details</Link></Typography>
-                                    </IconButton>
                                 </Stack>
-
-
 
                             </CardContent>
 

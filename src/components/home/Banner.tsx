@@ -69,7 +69,7 @@ const Banner = () => {
 
                 <Stack >
                     <Box pt={20}>
-                        <Typography variant="h4" align="center" sx={{ color: 'green', fontWeight: 700, fontSize: '2rem', zIndex: 1, }}>FreshMarket Explorer: Elevating Grocery Shopping</Typography>
+                        <Typography variant="h4" align="center" sx={{ color: 'green', fontWeight: 700, fontSize: '2rem', zIndex: 1, textShadow: ' 4px 6px 6px rgba(0,3,162,0.6)' }}>FreshMarket Explorer: Elevating Grocery Shopping</Typography>
                         <Typography
                             align="center"
                             sx={{
@@ -97,6 +97,7 @@ const Banner = () => {
                     },
                     mx: 'auto',
                     mt: 5,
+
 
                     alignContent: 'center',
                     alignItems: 'center',
