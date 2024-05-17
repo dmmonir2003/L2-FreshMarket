@@ -48,6 +48,7 @@ import { useEffect, useState } from 'react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Box } from '@mui/material';
 import { shadows } from '@mui/system';
+import { red } from '@mui/material/colors';
 const AnimationInBanner = () => {
     const [slidesPerView, setSlidesPerView] = useState(1);
 
@@ -74,6 +75,13 @@ const AnimationInBanner = () => {
                 <Box m={4}>
                     <SwiperSlide>
                         <Box
+
+                            border={8}
+                            sx={{
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                borderColor: red
+                            }}
 
                         ><Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/8c0c0ee54c56dc72393966ba9bbece1d.webp" /></Box>
                     </SwiperSlide>

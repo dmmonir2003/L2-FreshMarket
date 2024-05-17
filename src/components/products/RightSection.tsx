@@ -3,9 +3,23 @@ import React from 'react';
 import FlashCard from '../home/FlashCard';
 import Link from 'next/link';
 import { red } from '@mui/material/colors';
+interface Product {
+    _id: string;
+    id: number;
+    title: string;
+    image: string;
+    price: number;
+    ratings: number;
+    brand: string;
+    category: string;
+    description: string;
+}
 
+interface Props {
+    data: Product[];
+}
 
-const RightSection = ({ data }) => {
+const RightSection: React.FC<Props> = ({ data }) => {
 
 
 

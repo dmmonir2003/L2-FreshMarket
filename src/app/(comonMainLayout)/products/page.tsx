@@ -2,9 +2,13 @@ import LeftSecttion from '@/components/products/LeftSecttion';
 import RightSection from '@/components/products/RightSection';
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
+interface SearchParams {
 
-const ProductsPage = async ({ searchParams }) => {
-    const { category } = searchParams;
+    category: string;
+
+}
+const ProductsPage = async ({ searchParams }: { searchParams: SearchParams }) => {
+    const category = searchParams?.category;
 
 
 

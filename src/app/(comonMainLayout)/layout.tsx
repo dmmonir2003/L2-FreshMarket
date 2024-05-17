@@ -1,15 +1,17 @@
-
+import React, { ReactNode } from "react";
 import Footer from "@/components/shared/Footer/Footer";
 import Navber from "@/components/shared/Navber/Navber";
-import React from "react";
 
+interface MainLayoutPageProps {
+    children: ReactNode;
+}
 
-const MainLayoutPage = ({ children }: React.ReactNode) => {
+const MainLayoutPage: React.FC<MainLayoutPageProps> = ({ children }) => {
     return (
         <div>
-            <Navber></Navber>
+            <Navber />
             {children}
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 };

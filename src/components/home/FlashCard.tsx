@@ -66,8 +66,7 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                             />
                             <Divider sx={{ mt: 1 }}></Divider>
                             <CardContent >
-                                <Stack direction="column"
-                                    spacing={1} >
+                                <Stack direction="column" alignItems='center' justifyContent="space-between" >
                                     <Stack direction="row"
                                         justifyContent="space-around"
                                         alignItems="center"
@@ -88,7 +87,7 @@ const FlashCard: React.FC<Props> = ({ data }) => {
 
                                     </Stack>
 
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
+                                    <Box>
                                         <Button
                                             variant='contained'
                                             sx={{
