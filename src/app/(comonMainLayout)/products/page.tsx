@@ -14,7 +14,7 @@ const ProductsPage = async ({ searchParams }: { searchParams: SearchParams }) =>
 
     let products;
     if (category) {
-        const res = await fetch(`http://localhost:5000/api/products/category/${category}`, {
+        const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products/category/${category}`, {
             cache: 'no-store',
         })
 
@@ -22,7 +22,7 @@ const ProductsPage = async ({ searchParams }: { searchParams: SearchParams }) =>
         products = await res.json();
     }
     else {
-        const res = await fetch(`http://localhost:5000/api/products`, {
+        const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products`, {
             cache: 'no-store',
         })
         products = await res.json();

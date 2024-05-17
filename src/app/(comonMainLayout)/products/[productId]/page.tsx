@@ -17,13 +17,13 @@ import SingleProduct from '@/components/singleProduct/SingleProduct';
 
 export const generateStaticParams = async () => {
 
-    const res = await fetch(`http://localhost:5000/api/products`, {
+    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products`, {
         cache: 'no-store'
     })
 
     const products = await res.json();
 
-    const paths = products.slice(0, 10).map((product: { _id: string; }) => ({
+    const paths = products.slice(0, 10).map((product: { _id: string }) => ({
         params: { productId: product._id }
     }));
 
@@ -41,7 +41,7 @@ const ProductDetailPage: React.FC<ProductDetailParams> = async ({ params }) => {
     const { productId } = params;
 
 
-    const res = await fetch(`http://localhost:5000/api/products/${productId}`, {
+    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products/${productId}`, {
         cache: 'no-store'
     })
 

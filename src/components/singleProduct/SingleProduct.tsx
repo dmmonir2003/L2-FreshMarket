@@ -7,7 +7,18 @@ import React from 'react';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
-const SingleProduct = ({ data }) => {
+interface Product {
+    _id: string;
+    id: number;
+    title: string;
+    image: string;
+    price: number;
+    ratings: number;
+    brand: string;
+    category: string;
+    description: string;
+}
+const SingleProduct = ({ data }: { data: Product }) => {
 
     return (
         <Box mt={5}>

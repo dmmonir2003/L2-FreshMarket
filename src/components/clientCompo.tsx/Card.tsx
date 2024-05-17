@@ -6,7 +6,15 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { red } from '@mui/material/colors';
 
-const Card = ({ item, customHeight }) => {
+interface PropsType {
+    item: {
+        url: string;
+        title: string;
+    };
+    customHeight: string;
+}
+
+const Card = ({ item, customHeight }: PropsType) => {
     return (
         <Box
             sx={{

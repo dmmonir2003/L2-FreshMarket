@@ -45,7 +45,7 @@ const AllProducts: React.FC<Props> = ({ data }) => {
                             <TableRow key={row.id}>
                                 <TableCell component="th" scope="row">
                                     <Box width={100}>
-                                        <Image width={100} alt="image" src={row.image} style={{ width: '100%' }} />
+                                        <Image height={50} width={100} alt="image" src={row.image} style={{ width: '100%' }} />
                                     </Box>
                                 </TableCell>
                                 <TableCell component="th" scope="row">

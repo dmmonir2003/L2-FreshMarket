@@ -8,7 +8,7 @@ const LeftSecttion = () => {
                 <Box p={3} border={1} borderColor='black' borderRadius={2} width='230px'>
                     <Divider sx={{ height: '100%', marginRight: '10px' }} color='black' orientation="vertical" />   <Typography>Price  Range</Typography>
 
-                    <FormGroup mt={2}>
+                    <FormGroup >
                         <FormControlLabel control={<Checkbox defaultChecked />} label="$20.00 - $ 50.00" />
                         <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
                         <FormControlLabel control={<Checkbox />} label="$20.00 - $ 50.00" />
@@ -32,7 +32,7 @@ const LeftSecttion = () => {
                 <Box p={3} border={1} borderColor='black' borderRadius={2} width='230px'>
                     <Divider sx={{ height: '100%', marginRight: '10px' }} color='black' orientation="vertical" />   <Typography>Ratings</Typography>
 
-                    <FormGroup mt={2}>
+                    <FormGroup >
                         <FormControlLabel control={<Checkbox defaultChecked />} label="1 Star" />
                         <FormControlLabel control={<Checkbox />} label="2 Star" />
                         <FormControlLabel control={<Checkbox />} label="3 Star" />

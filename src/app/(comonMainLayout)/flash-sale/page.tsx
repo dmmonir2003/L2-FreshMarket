@@ -11,7 +11,7 @@ const FlashSaleProductsPage = async () => {
 
 
 
-    const res = await fetch('http://localhost:5000/api/products', {
+    const res = await fetch('https://l2-assign-8-backend.vercel.app/api/products', {
         cache: 'no-store',
         next: {
             revalidate: 30
