@@ -18,7 +18,7 @@ const Navber = () => {
 
                             <Image alt="logo"
                                 width={100}
-                                height={100} src='https://iili.io/J86Om92.png'></Image>
+                                height={100} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image>
                             <Box>
                                 <Typography fontWeight={700} variant="h5" component={'h5'}>FreshMarket</ Typography>
                                 <Typography component={'p'} fontWeight={700} mt={0}>Elevating Grocery Shopping</Typography>

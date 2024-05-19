@@ -13,37 +13,44 @@ import { green, red } from '@mui/material/colors';
 
 import SingleProduct from '@/components/singleProduct/SingleProduct';
 
-
-
-export const generateStaticParams = async () => {
-
-    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products`, {
-        cache: 'no-store'
-    })
-
-    const products = await res.json();
-
-    const paths = products.slice(0, 10).map((product: { _id: string }) => ({
-        params: { productId: product._id }
-    }));
-
-    return paths;
-
-}
-
 interface ProductDetailParams {
     params: {
         productId: string;
     };
 }
+interface Product {
+    _id: string;
+    id: number;
+    title: string;
+    image: string;
+    price: number;
+    ratings: number;
+    brand: string;
+    category: string;
+    description: string;
+}
+
+export const generateStaticParams = async () => {
+
+    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products`)
+
+    const products = await res.json();
+
+    return products.slice(0, 10).map((product: Product) => ({
+        productId: product._id
+    }));
+
+
+
+}
+
+
 
 const ProductDetailPage: React.FC<ProductDetailParams> = async ({ params }) => {
     const { productId } = params;
 
 
-    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products/${productId}`, {
-        cache: 'no-store'
-    })
+    const res = await fetch(`https://l2-assign-8-backend.vercel.app/api/products/${productId}`, { cache: 'no-store' })
 
     const product = await res.json();
 
