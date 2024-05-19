@@ -20,41 +20,37 @@ const Footer = () => {
 
                     <Stack py={5}>
                         <Box
-                            sx={{ position: 'relative' }}
+                            sx={{ position: 'absolute' }}
                         ><Image alt="logo"
                             width={100}
                             height={100} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image></Box>
-                        <Box sx={{ position: 'absolute', top: 20 }}>
+                        <Box sx={{ position: 'relative', bottom: -70 }}>
 
                             <Image alt="name"
                                 width={300}
                                 height={0} src='https://i.postimg.cc/BQ9BRgkd/441059184-466037495875153-7867512273675810353-n-removebg-preview-10.png'></Image>
                         </Box>
-                        <Image alt="logo"
+                        <Box mt={9}> <Image alt="logo"
                             width={300}
-                            height={100} src='https://www.bengalmeat.com/images/footer_icons_logo.png'></Image>
+                            height={100} src='https://www.bengalmeat.com/images/footer_icons_logo.png'></Image></Box>
 
                     </Stack>
-                    {/* <Stack py={5}>
 
-                        <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
-                            Title 2
-                        </Typography>
-                        <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
-                            Title 33333
-                        </Typography></Link>
-
-                    </Stack> */}
 
 
 
                     <Stack direction='row' spacing={15} justifyContent={'space-between'}
                     ><Stack py={5}>
 
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                            <Typography fontSize={20} fontWeight={500} color='#FA8F4D'>
                                 Company Information
                             </Typography>
-                            <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
+                            <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='#FFBD59' sx={{
+                                '&:hover': {
+                                    color: '#FA8F4D',
+
+                                }
+                            }}>
                                 Title 33333
                             </Typography></Link>
 
@@ -62,7 +58,7 @@ const Footer = () => {
 
                         <Stack py={5}>
 
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                            <Typography fontSize={20} fontWeight={500} color='#FA8F4D'>
                                 Customer Service
                             </Typography>
                             <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
@@ -72,7 +68,7 @@ const Footer = () => {
                         </Stack>
                         <Stack py={5}>
 
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                            <Typography fontSize={20} fontWeight={500} color='#FA8F4D'>
                                 Resources
                             </Typography>
                             <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
@@ -82,7 +78,7 @@ const Footer = () => {
                         </Stack>
                         <Stack py={5}>
 
-                            <Typography fontSize={20} fontWeight={500} color='#b7b7b7'>
+                            <Typography fontSize={20} fontWeight={500} color='#FA8F4D'>
                                 Resources
                             </Typography>
                             <Link href={'/products'}><Typography mt={3} fontSize={20} fontWeight={500} color='white'>
@@ -103,7 +99,7 @@ const Footer = () => {
                 <Stack direction='row' justifyContent='space-between' alignItems='center' py={3}>
 
                     <Box>
-                        <Typography textAlign='center'>Download App</Typography>
+                        <Typography color='#FA8F4D' textAlign='center'>Download App</Typography>
                         <Stack direction='row' spacing={2} alignItems='center' mt={1}>
 
 
@@ -126,7 +122,7 @@ const Footer = () => {
 
                     </Box>
                     <Box>
-                        <Typography textAlign='center'>Online Payments</Typography>
+                        <Typography color='#FA8F4D' textAlign='center'>Online Payments</Typography>
                         <Stack direction='row' spacing={2} alignItems='center' mt={1}>
 
 
@@ -168,13 +164,13 @@ const Footer = () => {
 
                     <Box >
 
-                        <Typography color='#b7b7b7' textAlign='center'>Follow Us </Typography>
+                        <Typography color='#FA8F4D' textAlign='center'>Follow Us </Typography>
                         <Stack mt={1} direction='row' spacing={1} alignItems='center'>
 
                             <Link href='#' >
-                                <Box color='white' sx={{
+                                <Box color='#FFBD59' sx={{
                                     '&:hover': {
-                                        color: 'red',
+                                        color: '#FA8F4D',
 
                                     }
                                 }}>
