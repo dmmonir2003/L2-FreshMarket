@@ -3,7 +3,7 @@ import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const CategoryDrowpMenu = () => {
@@ -39,40 +39,39 @@ const CategoryDrowpMenu = () => {
                 >
                     Category<KeyboardArrowDownIcon />
                 </Typography>
-                <Menu
-                    id="basic-menu"
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-                    MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                    }}
+                <Box color='#FA8F4D'>
+                    <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                            'aria-labelledby': 'basic-button',
+                        }}
 
-                >
-                    <MenuItem onClick={handleClose} sx={{
-                        '&:hover': {
-                            textDecoration: 'underline',
-                            color: '#FA8F4D'
-
-                        }
-                    }}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose} color='#FFBD59' sx={{
-                        '&:hover': {
-                            textDecoration: 'underline',
-                            color: '#FA8F4D'
-
-                        }
-                    }}>best meet</MenuItem>
-                    <MenuItem onClick={handleClose} color='#FA8F4D' sx={{
-                        '&:hover': {
-                            textDecoration: 'underline',
-                            color: '#FA8F4D'
-
-                        }
-                    }}>
-                        <Link href={'/products'} >Products</Link>
-                    </MenuItem>
-                </Menu>
+                    >
+                        <MenuItem onClick={handleClose} sx={{
+                            '&:hover': {
+                                textDecoration: 'underline',
+                                color: '#e25300'
+                            }
+                        }}>Profile</MenuItem>
+                        <MenuItem onClick={handleClose} color='#FFBD59' sx={{
+                            '&:hover': {
+                                textDecoration: 'underline',
+                                color: '#e25300'
+                            }
+                        }}>best meet</MenuItem>
+                        <MenuItem onClick={handleClose} color='#FA8F4D' sx={{
+                            '&:hover': {
+                                textDecoration: 'underline',
+                                color: '#e25300'
+                            }
+                        }}>
+                            <Link href={'/products'} >Products</Link>
+                        </MenuItem>
+                    </Menu>
+                </Box>
             </div>
         </div>
     );

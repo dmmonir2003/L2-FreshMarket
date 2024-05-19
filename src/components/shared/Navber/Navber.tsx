@@ -32,7 +32,7 @@ const Navber = () => {
                             <Typography fontWeight={600} component={Link} href={'/'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>Home </Typography>
 
@@ -40,31 +40,31 @@ const Navber = () => {
                             <Typography fontWeight={600} component={Link} href={'/products'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>Products </Typography>
                             <Typography fontWeight={600} component={Link} href={'/flash-sale'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>Flash Sale </Typography>
                             <Typography fontWeight={600} component={Link} href={'/about-us'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>About Us </Typography>
                             <Typography fontWeight={600} component={Link} href={'/contact-us'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>Contact Us </Typography>
                             <Typography fontWeight={600} component={Link} href={'/dashboard'} color='#FA8F4D' sx={{
                                 '&:hover': {
                                     textDecoration: 'underline',
-
+                                    color: '#e25300'
                                 }
                             }}>Dashboard </Typography>
                         </Stack>
