@@ -19,9 +19,12 @@ const Navber = () => {
                             <Image alt="logo"
                                 width={100}
                                 height={100} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image>
+
                             <Box>
-                                <Typography fontWeight={700} variant="h5" component={'h5'}>FreshMarket</ Typography>
-                                <Typography component={'p'} fontWeight={700} mt={0}>Elevating Grocery Shopping</Typography>
+
+                                <Image alt="name"
+                                    width={220}
+                                    height={0} src='https://i.postimg.cc/BQ9BRgkd/441059184-466037495875153-7867512273675810353-n-removebg-preview-10.png'></Image>
                             </Box>
                         </Stack>
 
