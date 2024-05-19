@@ -17,8 +17,8 @@ const Navber = () => {
                         <Stack direction="row" alignItems={'center'} gap={2}>
 
                             <Image alt="logo"
-                                width={100}
-                                height={100} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image>
+                                width={80}
+                                height={80} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image>
 
                             <Box>
 
@@ -29,14 +29,44 @@ const Navber = () => {
                         </Stack>
 
                         <Stack direction='row' spacing={4} sx={{ display: { xs: "none", md: "flex" } }}>
-                            <Typography fontWeight={600} component={Link} href={'/'}>Home </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>Home </Typography>
 
                             <CategoryDrowpMenu></CategoryDrowpMenu>
-                            <Typography fontWeight={600} component={Link} href={'/products'}>Products </Typography>
-                            <Typography fontWeight={600} component={Link} href={'/flash-sale'}>Flash Sale </Typography>
-                            <Typography fontWeight={600} component={Link} href={'/about-us'}>About Us </Typography>
-                            <Typography fontWeight={600} component={Link} href={'/contact-us'}>Contact Us </Typography>
-                            <Typography fontWeight={600} component={Link} href={'/dashboard'}>Dashboard </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/products'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>Products </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/flash-sale'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>Flash Sale </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/about-us'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>About Us </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/contact-us'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>Contact Us </Typography>
+                            <Typography fontWeight={600} component={Link} href={'/dashboard'} color='#FA8F4D' sx={{
+                                '&:hover': {
+                                    textDecoration: 'underline',
+
+                                }
+                            }}>Dashboard </Typography>
                         </Stack>
 
                         <ToggoleButtonInNav>

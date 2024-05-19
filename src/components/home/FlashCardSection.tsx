@@ -24,15 +24,15 @@ const FlashCardSection = async () => {
     return (
         <div>
             <Stack justifyContent='space-between' mt={30} mb={10} direction='row'>
-                <Typography variant='h3' component={'h3'}>Flash Sale</Typography>
+                <Typography variant='h3' color='#FA8F4D' component={'h3'}>Flash Sale</Typography>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
                     <Button
                         variant='contained'
                         sx={{
                             borderRadius: '45%',
-                            backgroundColor: red[500],
-                            '&:hover': { backgroundColor: 'red' }
+                            backgroundColor: '#FFBD59',
+                            '&:hover': { backgroundColor: '#FA8F4D' }
                         }}
                     >
                         <Link href={`/flash-sale`}>View ALL</Link>

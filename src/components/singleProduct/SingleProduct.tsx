@@ -47,7 +47,7 @@ const SingleProduct = ({ data }: { data: Product }) => {
                         <Box
 
                         >
-                            <Typography fontSize={30} fontWeight={700}>{data.title}</Typography>
+                            <Typography fontSize={30} fontWeight={700} color='#FA8F4D'>{data.title}</Typography>
 
                             <Box
                                 sx={{
@@ -58,11 +58,11 @@ const SingleProduct = ({ data }: { data: Product }) => {
 
                                 }}
                             >
-                                <Typography fontSize={20}>${data.price}</Typography>
+                                <Typography fontSize={20} color='#FA8F4D' fontWeight={600}>${data.price}</Typography>
                                 <Divider color='black' orientation="vertical" variant="middle" flexItem sx={{ height: 15, width: 2 }} />
                                 <Rating name="half-rating" defaultValue={data.ratings} precision={0.5} /> <Typography component={'span'}>( 32 review )</Typography>
                             </Box>
-                            <Divider sx={{ my: 2, }} />
+                            <Divider color='#FA8F4D' sx={{ my: 2, }} />
 
                         </Box>
                         <Box>  <IconButton aria-label="add to favorites">
@@ -81,14 +81,26 @@ const SingleProduct = ({ data }: { data: Product }) => {
 
                     </Box>
 
-                    <Stack direction='row' gap={2} alignItems='center'> <LocalShippingIcon></LocalShippingIcon> <Typography>Free worldwide shipping on all orders over $100</Typography></Stack>
-                    <Stack mt={1} direction='row' gap={2} alignItems='center'> <HourglassTopIcon></HourglassTopIcon> <Typography>Delivers in: 3-7 Working Days Shipping & Return</Typography></Stack>
+                    <Stack direction='row' gap={2} alignItems='center'> <LocalShippingIcon sx={{
+                        '&:hover': {
+                            color: '#FA8F4D',
+
+                        },
+                        color: '#FFBD59'
+                    }}></LocalShippingIcon> <Typography>Free worldwide shipping on all orders over $100</Typography></Stack>
+                    <Stack mt={1} direction='row' gap={2} alignItems='center'> <HourglassTopIcon sx={{
+                        '&:hover': {
+                            color: '#FA8F4D',
+
+                        },
+                        color: '#FFBD59'
+                    }}></HourglassTopIcon> <Typography>Delivers in: 3-7 Working Days Shipping & Return</Typography></Stack>
                 </Grid>
 
             </Grid>
 
             <Box bgcolor={'#f5f5f5'} my={10} py={5} px={2}>
-                <Typography my={2} fontSize={20} fontWeight={600}>{data.brand}</Typography>
+                <Typography my={2} fontSize={20} fontWeight={600} color='#FA8F4D'>{data.brand}</Typography>
                 <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Typography>
                 <Box my={2} ml={1}>
                     <Typography component={'li'}>Lorem ipsum dolor sit amet, adipi scing elit</Typography>

@@ -30,6 +30,12 @@ const CategoryDrowpMenu = () => {
                     onClick={handleClick}
                     fontWeight={600}
                     style={{ cursor: 'pointer' }}
+                    color='#FA8F4D' sx={{
+                        '&:hover': {
+                            textDecoration: 'underline',
+
+                        }
+                    }}
                 >
                     Category<KeyboardArrowDownIcon />
                 </Typography>
@@ -41,11 +47,30 @@ const CategoryDrowpMenu = () => {
                     MenuListProps={{
                         'aria-labelledby': 'basic-button',
                     }}
+
                 >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>best meet</MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Link href={'/products'}>Products</Link>
+                    <MenuItem onClick={handleClose} sx={{
+                        '&:hover': {
+                            textDecoration: 'underline',
+                            color: '#FA8F4D'
+
+                        }
+                    }}>Profile</MenuItem>
+                    <MenuItem onClick={handleClose} color='#FFBD59' sx={{
+                        '&:hover': {
+                            textDecoration: 'underline',
+                            color: '#FA8F4D'
+
+                        }
+                    }}>best meet</MenuItem>
+                    <MenuItem onClick={handleClose} color='#FA8F4D' sx={{
+                        '&:hover': {
+                            textDecoration: 'underline',
+                            color: '#FA8F4D'
+
+                        }
+                    }}>
+                        <Link href={'/products'} >Products</Link>
                     </MenuItem>
                 </Menu>
             </div>

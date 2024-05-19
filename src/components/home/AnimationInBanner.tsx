@@ -76,31 +76,54 @@ const AnimationInBanner = () => {
                     <SwiperSlide>
                         <Box
 
-                            border={8}
+                            border={3}
                             sx={{
                                 borderRadius: '8px',
                                 overflow: 'hidden',
-                                borderColor: red
+                                borderColor: '#FA8F4D'
                             }}
 
                         ><Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/8c0c0ee54c56dc72393966ba9bbece1d.webp" /></Box>
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <Box border={3}
+                            sx={{
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                borderColor: '#FA8F4D'
+                            }}> <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367693895_706360938193752_872166108487316599_n-1024x1024.jpg" /></Box>
 
-                        <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367693895_706360938193752_872166108487316599_n-1024x1024.jpg" />
 
                     </SwiperSlide>
 
 
                     <SwiperSlide>
-                        <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367759056_706360928193753_1051459860970699514_n-1024x1024.jpg" />
+                        <Box border={3}
+                            sx={{
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                borderColor: '#FA8F4D'
+                            }}>
+                            <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/367759056_706360928193753_1051459860970699514_n-1024x1024.jpg" />
+                        </Box>
+
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/lamb-leg-wooden-board-prepared-cook-tomato-broccoli-salt-top-view-scaled-e1706637505220-800x800.webp" />
+                        <Box border={3}
+                            sx={{
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                borderColor: '#FA8F4D'
+                            }}><Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/lamb-leg-wooden-board-prepared-cook-tomato-broccoli-salt-top-view-scaled-e1706637505220-800x800.webp" /></Box>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/d20d778705ddcd9918c8dad776ead01c.webp" />
+                        <Box border={3}
+                            sx={{
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                borderColor: '#FA8F4D'
+                            }}> <Image width={250} height={400} alt='card-image' src="https://meat-bazar.com/wp-content/uploads/2024/01/d20d778705ddcd9918c8dad776ead01c.webp" /></Box>
                     </SwiperSlide>
                 </Box>
             </Swiper>
