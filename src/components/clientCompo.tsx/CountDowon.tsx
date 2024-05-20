@@ -58,7 +58,7 @@ const CountdownTimer: React.FC = () => {
 
     return (
 
-        <Stack direction='row' justifyContent={'space-evenly'} gap={1} width={{ xs: '20rem', sm: '80vh' }} bgcolor={red[400]} height={100} alignItems='center' borderColor={red} p={1} borderRadius={2} >
+        <Stack direction='row' justifyContent={'space-evenly'} gap={1} width={{ xs: '20rem', sm: '80vh' }} bgcolor={'#FA8F4D'} height={100} alignItems='center' borderColor={red} p={1} borderRadius={2} >
             <Typography color={"white"} fontSize={18} fontWeight={700}>End Time: </Typography>
             <Typography color={"white"} border={1} p={.5} borderColor={'white'} borderRadius={5} fontWeight={700}>{timeLeft.days}D</Typography>
             <Typography color={"white"} border={1} p={.5} borderColor={'white'} borderRadius={5} fontWeight={700}>{timeLeft.hours}H</Typography>

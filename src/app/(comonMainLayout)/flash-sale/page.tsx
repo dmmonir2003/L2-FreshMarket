@@ -25,9 +25,9 @@ const FlashSaleProductsPage = async () => {
         <Container>
             <Stack direction={{ xs: 'column-reverse', sm: 'row' }} justifyContent='space-between' alignItems='center'>
                 <Box my={3} width={{ xs: '20rem', sm: '100vh' }} >
-                    <Typography fontSize={30} fontWeight={700}>Flash Sale</Typography>
-                    <Typography fontSize={15} mt={2} fontWeight={700}>Showing 1–12 of 24 item(s)</Typography>
-                    <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+                    <Typography fontSize={30} fontWeight={600} color='#e25300' component={'h3'}>Flash Sale</Typography>
+                    <Typography fontSize={15} mt={2} fontWeight={600} color='#FA8F4D'>Showing 1–12 of 24 item(s)</Typography>
+                    <Typography color='#FFBD59' fontWeight={500}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
 
                 </Box>
 
@@ -47,8 +47,8 @@ const FlashSaleProductsPage = async () => {
                     variant='contained'
                     sx={{
                         borderRadius: '45%',
-                        backgroundColor: red[500],
-                        '&:hover': { backgroundColor: 'red' }
+                        backgroundColor: '#FA8F4D',
+                        '&:hover': { backgroundColor: '#e25300' }
                     }}
                 >
                     <Link href={'/products'}>View All</Link>

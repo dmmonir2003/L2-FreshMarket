@@ -19,7 +19,7 @@ const CategorySection = () => {
         },
 
         {
-            url: 'https://s3-ap-southeast-1.amazonaws.com/com.meenabazaronline.v1.01/homeBanner/2024/1/1/rJV9Jw2ulO6Znk6rToeXi58l1lxvW6jst7XnXbd1___tmd.webp',
+            url: 'https://www.bengalmeat.com/images/beef-bacon-special.png',
             title: 'Ready To Cooked',
             width: '30%',
         },
@@ -59,8 +59,8 @@ const CategorySection = () => {
                         <Grid item xs={12} >
                             <Card item={images[1]} customHeight={'200px'} />
                         </Grid>
-                        <Grid item xs={12} >
-                            <Card item={images[3]} customHeight={'200px'} />
+                        <Grid item xs={12}>
+                            <Box ><Card item={images[3]} customHeight={'200px'} /></Box>
                         </Grid>
                     </Grid>
                 </Grid>

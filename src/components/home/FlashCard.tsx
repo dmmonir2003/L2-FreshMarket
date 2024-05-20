@@ -72,7 +72,7 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                                         spacing={4} >
 
                                         <Box>
-                                            <Typography color="text.secondary">
+                                            <Typography color="#FA8F4D" fontWeight={600}>
                                                 {products?.title}
                                             </Typography>
                                             <Typography>

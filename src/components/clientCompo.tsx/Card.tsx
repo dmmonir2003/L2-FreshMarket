@@ -16,36 +16,36 @@ interface PropsType {
 
 const Card = ({ item, customHeight }: PropsType) => {
     return (
-        <Box
-            sx={{
-                height: {
-                    xs: 200,
-                    md: customHeight
-                },
-                backgroundImage: `url(${item.url})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                transition: 'transform 0.3s ease',
-                opacity: 0.8,
-                '&:hover': {
-                    transform: 'scale(1.10)',
-                    opacity: 1
-                },
+        <Link style={{ textDecoration: 'none' }} href={`/products?category=${item?.title}`}>
+            <Box
+                sx={{
+                    height: {
+                        xs: 200,
+                        md: customHeight,
+
+                    },
+                    backgroundImage: `url(${item.url})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    transition: 'transform 0.3s ease',
+                    opacity: 0.8,
+                    '&:hover': {
+                        transform: 'scale(1.10)',
+                        opacity: 1,
+                        color: 'red'
+                    },
 
 
-            }}
-            className={`bg-cover bg-center rounded-lg shadow-md overflow-hidden flex flex-col justify-center items-center`}
-        >
-            <Link style={{ textDecoration: 'none' }} href={`/products?category=${item?.title}`}>
-                <Typography fontSize={40} fontWeight={700} color='black' sx={{
-                    color: red[500],
+                }}
 
-                    '&:hover': { color: 'red' }
-                }}>
-                    {item.title}
-                </Typography>
-            </Link>
-        </Box>
+            >
+                <Box bgcolor={'#FA8F4D'} width={180}>
+                    <Typography textAlign={'center'} fontSize={17} py={2} px={1} fontWeight={700} color='white'  >
+                        {item.title}
+                    </Typography>
+                </Box>
+            </Box>
+        </Link>
     );
 };
 

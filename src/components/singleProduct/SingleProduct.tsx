@@ -87,17 +87,17 @@ const SingleProduct = ({ data }: { data: Product }) => {
 
                     <Stack direction='row' gap={2} alignItems='center'> <LocalShippingIcon sx={{
                         '&:hover': {
-                            color: '#FA8F4D',
+                            color: '#e25300',
 
                         },
-                        color: '#FFBD59'
+                        color: '#FA8F4D'
                     }}></LocalShippingIcon> <Typography>Free worldwide shipping on all orders over $100</Typography></Stack>
                     <Stack mt={1} direction='row' gap={2} alignItems='center'> <HourglassTopIcon sx={{
                         '&:hover': {
-                            color: '#FA8F4D',
+                            color: '#e25300',
 
                         },
-                        color: '#FFBD59'
+                        color: '#FA8F4D'
                     }}></HourglassTopIcon> <Typography>Delivers in: 3-7 Working Days Shipping & Return</Typography></Stack>
                 </Grid>
 
