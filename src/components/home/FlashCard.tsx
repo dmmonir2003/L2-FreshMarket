@@ -40,11 +40,10 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                 alignItems="center">
                 {data.map((products, index) => (
                     <Grid item key={index}>
-                        <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 380, maxHeight: 380, position: 'relative', p: 1 }}>
+                        <Card sx={{ maxWidth: 255, minWidth: 255, minHeight: 380, maxHeight: 380, position: 'relative', p: 1, boxShadow: ' -1px -1px 18px 1px rgba(224,224,224,1)', }}>
                             <IconButton aria-label="percentage" sx={{
-                                position: 'absolute', top: 0, left: 0, backgroundColor: red[500], '&:hover': {
-                                    backgroundColor: red[500],
-                                }, padding: '2px', px: 2, textAlign: 'center', ml: 1, mt: 1,
+                                position: 'absolute', top: 0, left: 0, backgroundColor: '#e25300',
+                                padding: '2px', px: 2, textAlign: 'center', ml: 1, mt: 1,
                             }}>
                                 <Typography component={'p'} sx={{ fontSize: 12, color: 'white' }} > -13%</Typography>
                             </IconButton>
@@ -92,9 +91,8 @@ const FlashCard: React.FC<Props> = ({ data }) => {
                                             variant='contained'
                                             sx={{
                                                 borderRadius: '45%',
-                                                backgroundColor: red[500],
-                                                fontSize: '12px',
-                                                '&:hover': { backgroundColor: 'red' }
+                                                backgroundColor: '#FA8F4D',
+                                                '&:hover': { backgroundColor: '#e25300' }
                                             }}
                                         >
                                             <Link href={`/products/${products._id}`}>View details</Link>

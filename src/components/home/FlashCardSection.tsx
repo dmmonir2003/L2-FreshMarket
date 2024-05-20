@@ -22,9 +22,9 @@ const FlashCardSection = async () => {
 
 
     return (
-        <div>
-            <Stack justifyContent='space-between' mt={30} mb={10} direction='row'>
-                <Typography variant='h3' color='#e25300' component={'h3'}>Flash Sale</Typography>
+        <Box >
+            <Stack justifyContent='space-between' mt={30} mb={10} direction='row' alignItems='center'>
+                <Typography variant='h4' fontWeight={600} color='#e25300' component={'h3'}>Flash Sale</Typography>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
                     <Button
@@ -43,7 +43,7 @@ const FlashCardSection = async () => {
             <Stack  >
                 <FlashCard data={data}></FlashCard>
             </Stack>
-        </div>
+        </Box>
     );
 };
 

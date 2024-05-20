@@ -27,18 +27,22 @@ const SingleProduct = ({ data }: { data: Product }) => {
                     <Stack direction={{ xs: 'column-reverse', sm: 'row' }} gap={4}>
                         <Stack direction={{ xs: 'row', sm: 'column' }} gap={2}>
 
-                            <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
+                            <Box border={3} borderRadius={2} borderColor='#FA8F4D' sx={{ maxWidth: '100px', maxHeight: '200px' }}>
                                 <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
-                            <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
+                            <Box border={3} borderRadius={2} borderColor='#FA8F4D' sx={{ maxWidth: '100px', maxHeight: '200px' }}>
                                 <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
-                            <Box sx={{ maxWidth: '100px', maxHeight: '200px' }}>
+                            <Box border={3} borderRadius={2} borderColor='#FA8F4D' sx={{ maxWidth: '100px', maxHeight: '200px' }}>
                                 <Image alt='small image' height={100} width={150} src={data.image}></Image>
                             </Box>
                         </Stack>
                         <Stack>
-                            <Image alt='small image' height={330} width={330} src={data.image}></Image>
+                            <Box border={3} borderRadius={2} borderColor='#FA8F4D' sx={{
+
+                                boxShadow: '-1px -1px 18px 1px rgba(224,224,224,1)',
+                            }}><Image alt='small image' height={330} width={330} src={data.image}></Image></Box>
+
                         </Stack>
                     </Stack>
                 </Grid>

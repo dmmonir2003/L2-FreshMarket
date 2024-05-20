@@ -25,8 +25,8 @@ const MostPopularSection = async () => {
             <Stack direction='row' justifyContent='space-between' my={15}>
 
                 <Box sx={{ width: '50%' }}>
-                    <Typography variant='h5' component={'h5'}>Most Popular Products</Typography>
-                    <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero enim magni fugit reiciendis rerum dolorem.</Typography>
+                    <Typography variant='h4' fontWeight={600} color='#e25300' component={'h3'}>Most Popular Products</Typography>
+                    <Typography fontWeight={600} color='#FA8F4D' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero enim magni fugit reiciendis rerum dolorem.</Typography>
                 </Box>
 
 
@@ -36,8 +36,8 @@ const MostPopularSection = async () => {
                         variant='contained'
                         sx={{
                             borderRadius: '45%',
-                            backgroundColor: red[500],
-                            '&:hover': { backgroundColor: 'red' } // Corrected syntax for hover state
+                            backgroundColor: '#FA8F4D',
+                            '&:hover': { backgroundColor: '#e25300' }// Corrected syntax for hover state
                         }}
                     >
                         <Link href={'/products'}>View All</Link>

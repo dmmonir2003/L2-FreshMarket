@@ -35,10 +35,10 @@ const CategorySection = () => {
     return (
         <>
             <Box my={10}>
-                <Typography variant="h4" component='h4' textAlign='center' fontWeight={700}>
+                <Typography textAlign='center' variant='h4' fontWeight={600} color='#e25300' component={'h3'}>
                     Top Categories
                 </Typography>
-                <Typography component='p' textAlign='center' fontWeight={600} sx={{ width: '50%', mx: 'auto' }}>
+                <Typography component='p' textAlign='center' fontWeight={600} color='#FA8F4D' sx={{ width: '50%', mx: 'auto' }}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit voluptas mollitia praesentium assumenda dolor voluptate quasi sit, nemo facilis!
                 </Typography>
             </Box>
@@ -79,8 +79,8 @@ const CategorySection = () => {
                     variant='contained'
                     sx={{
                         borderRadius: '45%',
-                        backgroundColor: red[500],
-                        '&:hover': { backgroundColor: 'red' }
+                        backgroundColor: '#FA8F4D',
+                        '&:hover': { backgroundColor: '#e25300' }
                     }}
                 >
                     <Link href={'/products'}>View All</Link>

@@ -39,7 +39,7 @@ const CategoryDrowpMenu = () => {
                 >
                     Category<KeyboardArrowDownIcon />
                 </Typography>
-                <Box color='#FA8F4D'>
+                <Box >
                     <Menu
                         id="basic-menu"
                         anchorEl={anchorEl}
@@ -51,18 +51,21 @@ const CategoryDrowpMenu = () => {
 
                     >
                         <MenuItem onClick={handleClose} sx={{
+                            color: '#FA8F4D',
                             '&:hover': {
                                 textDecoration: 'underline',
                                 color: '#e25300'
                             }
                         }}>Profile</MenuItem>
                         <MenuItem onClick={handleClose} color='#FFBD59' sx={{
+                            color: '#FA8F4D',
                             '&:hover': {
                                 textDecoration: 'underline',
                                 color: '#e25300'
                             }
                         }}>best meet</MenuItem>
                         <MenuItem onClick={handleClose} color='#FA8F4D' sx={{
+                            color: '#FA8F4D',
                             '&:hover': {
                                 textDecoration: 'underline',
                                 color: '#e25300'
