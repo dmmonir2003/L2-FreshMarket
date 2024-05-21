@@ -39,149 +39,158 @@ const Footer = () => {
 
 
 
-                    <Stack direction='row' maxWidth={750} spacing={15} justifyContent={'space-between'}
-                    ><Stack py={5}>
+                    <Stack maxWidth={750} spacing={10}
+                        direction={{ xs: 'column', sm: 'column', md: 'row' }}
+                    >
+                        <Stack direction={'row'} spacing={10}>
 
-                            <Typography fontSize={18} fontWeight={600} color='#e25300'>
-                                Company Information
-                            </Typography>
+                            <Stack py={5}>
 
-                            <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                <Typography fontSize={18} fontWeight={600} color='#e25300'>
+                                    Company Information
+                                </Typography>
 
-                                }
-                            }}>
-                                Our Story
-                            </Typography></Link>
-                            <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
+                                    }
+                                }}>
+                                    Our Story
+                                </Typography></Link>
+                                <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                Our Customers
-                            </Typography></Link>
-                            <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                    }
+                                }}>
 
-                                }
-                            }}>
-                                License & Certifications
-                            </Typography></Link>
+                                    Our Customers
+                                </Typography></Link>
+                                <Link href={'/products'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                        </Stack>
+                                    }
+                                }}>
+                                    License & Certifications
+                                </Typography></Link>
 
-                        <Stack py={5}>
+                            </Stack>
+                            <Stack py={5}>
 
-                            <Typography fontSize={18} fontWeight={600} color='#e25300'>
-                                Customer Service
-                            </Typography>
+                                <Typography fontSize={18} fontWeight={600} color='#e25300'>
+                                    Customer Service
+                                </Typography>
 
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
-                                Customer Feedback
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                    }
+                                }}>
+                                    Customer Feedback
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
+                                    }
+                                }}>
 
-                                Contact Us
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                    Contact Us
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
-                                How To Order
-                            </Typography></Link>
-
-
+                                    }
+                                }}>
+                                    How To Order
+                                </Typography></Link>
 
 
-                        </Stack>
-                        <Stack py={5}>
 
-                            <Typography fontSize={18} fontWeight={600} color='#e25300'>
-                                Resources
-                            </Typography>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
 
-                                }
-                            }}>
-                                FAQ
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
-
-                                }
-                            }}>
-                                Walk The Meat
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
-
-                                }
-                            }}>
-
-                                Expert Speaks
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
-
-                                }
-                            }}>
-                                Blog
-                            </Typography></Link>
+                            </Stack>
 
                         </Stack>
-                        <Stack py={5}>
 
-                            <Typography fontSize={18} fontWeight={600} color='#e25300'>
-                                Policies
-                            </Typography>
 
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                        <Stack direction={'row'} spacing={10}>
+                            <Stack py={5}>
 
-                                }
-                            }}>
-                                Terms & Conditions
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                <Typography fontSize={18} fontWeight={600} color='#e25300'>
+                                    Resources
+                                </Typography>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
+                                    }
+                                }}>
+                                    FAQ
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                Refund & Return Policy
-                            </Typography></Link>
-                            <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
-                                '&:hover': {
-                                    color: '#FA8F4D',
+                                    }
+                                }}>
+                                    Walk The Meat
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
 
-                                }
-                            }}>
-                                Privacy Policy
-                            </Typography></Link>
+                                    }
+                                }}>
 
+                                    Expert Speaks
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
+
+                                    }
+                                }}>
+                                    Blog
+                                </Typography></Link>
+
+                            </Stack>
+                            <Stack py={5}>
+
+                                <Typography fontSize={18} fontWeight={600} color='#e25300'>
+                                    Policies
+                                </Typography>
+
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
+
+                                    }
+                                }}>
+                                    Terms & Conditions
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
+
+                                    }
+                                }}>
+
+                                    Refund & Return Policy
+                                </Typography></Link>
+                                <Link href={'#'}><Typography mt={1} fontSize={15} color='#FFBD59' sx={{
+                                    '&:hover': {
+                                        color: '#FA8F4D',
+
+                                    }
+                                }}>
+                                    Privacy Policy
+                                </Typography></Link>
+
+                            </Stack>
                         </Stack>
 
                     </Stack>
