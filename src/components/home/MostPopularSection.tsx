@@ -15,7 +15,7 @@ const MostPopularSection = async () => {
 
     const products = await res.json();
 
-    const data = products?.slice(0, 6);
+    const data = products?.slice(0, 8);
 
 
 
