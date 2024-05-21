@@ -1,8 +1,37 @@
+import { Box, Typography } from "@mui/material";
+import Link from "next/link";
+
 const Sidebar = () => {
     return (
-        <div className="h-screen  bg-gray-500 p-20 w-1/4 md:w-full  sm:w-1/2">
-            <h2 className="">h2ffffff</h2>
-        </div>
+        <Box sx={{
+            minHeight: '100vh',
+            position: 'sticky',
+            top: 0,
+            bgcolor: 'gray'
+
+        }}>
+            <Box sx={{
+                color: '#FA8F4D',
+                ':hover': {
+                    color: '#e25300'
+                }
+            }}>
+                <Link href={'/dashboard'}>
+                    <Typography textAlign='center' pt={17} fontSize={25} fontWeight={600}>All Products</Typography>
+                </Link>
+            </Box>
+            <Box sx={{
+                color: '#FA8F4D',
+                ':hover': {
+                    color: '#e25300'
+                }
+            }}>
+                <Link href={'/'}>
+                    <Typography textAlign='center' mt={1} fontSize={25} fontWeight={600}>Return Home</Typography>
+                </Link>
+            </Box>
+
+        </Box>
     );
 };
 

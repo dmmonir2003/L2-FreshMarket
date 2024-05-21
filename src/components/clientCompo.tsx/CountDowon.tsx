@@ -1,29 +1,4 @@
-// "use client"
 
-// import React, { useState } from 'react';
-// import Countdown from 'react-countdown';
-
-// const CountDowon = () => {
-//     const [time, setTime] = useState(Date.now() + 1000);
-
-//     const handleTick = ({ total }) => {
-//         setTime(total);
-//     };
-
-//     return (
-//         <div>
-//             <Countdown
-//                 date={time}
-//                 intervalDelay={3}
-//                 precision={3}
-//                 onTick={handleTick}
-//             />
-//             {time}
-//         </div>
-//     );
-// };
-
-// export default CountDowon;
 
 "use client";
 
@@ -54,7 +29,7 @@ const CountdownTimer: React.FC = () => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [calculateTimeLeft]);
 
     return (
 

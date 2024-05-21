@@ -24,11 +24,11 @@ const Footer = () => {
                         ><Image alt="logo"
                             width={100}
                             height={100} src='https://i.ibb.co/1mZBmRF/441248276-413188498348281-4150223707497410940-n-removebg-preview.png'></Image></Box>
-                        <Box sx={{ position: 'relative', bottom: -70 }}>
+                        <Box sx={{ position: 'relative', bottom: -80 }}>
 
                             <Image alt="name"
                                 width={300}
-                                height={0} src='https://i.postimg.cc/BQ9BRgkd/441059184-466037495875153-7867512273675810353-n-removebg-preview-10.png'></Image>
+                                height={0} src='https://i.ibb.co/yhWTTnR/0e13e29f-9414-4e14-958f-4a0053bff0a8-removebg-preview.png'></Image>
                         </Box>
                         <Box mt={9}> <Image alt="logo"
                             width={300}
@@ -202,7 +202,11 @@ const Footer = () => {
 
 
 
-                <Stack direction='row' justifyContent='space-between' alignItems='center' py={3}>
+                <Stack direction={{
+                    sx: 'column',
+                    sm: 'column',
+                    md: 'row'
+                }} justifyContent='space-between' spacing={4} alignItems='center' py={3}>
 
                     <Box>
                         <Typography color='#e25300' textAlign='center'>Download App</Typography>

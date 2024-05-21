@@ -84,35 +84,3 @@ export default Navber;
 
 
 
-
-
-// {/* https://iili.io/J86Om92.png */ }
-
-
-
-
-// //Banner image
-// // https://www.basarbazar.com.bd/wp-content/uploads/2019/12/Banner3.jpg
-
-// // https://www.basarbazar.com.bd/wp-content/uploads/2019/12/Banner1.jpg
-
-// // https://www.basarbazar.com.bd/wp-content/uploads/2019/12/Banner5.jpg
-
-// // https://themeatmarket.ph/cdn/shop/files/wholesale_needs_1170x.progressive.png.jpg?v=1691031866
-
-
-// // demo site for color and navber
-// // https://www.luluhypermarket.in/en-in/groceries-fresh-food-fresh-meat-chicken/c/HY00216147
-
-
-// // meet-beef image for bannser
-
-// // https://images.squarespace-cdn.com/content/v1/63430e0d8f68b501470722ab/1674760522218-LIPF3T4WQ5PWYP1TAB2T/AdobeStock_247349249.jpeg?format=300w
-
-// //  mutton meat
-// // https://st2.depositphotos.com/22628872/44276/i/450/depositphotos_442761114-stock-photo-lamb-raw-cutlets-chops-salt.jpg
-
-// // https://img.freepik.com/premium-photo/raw-leg-lamb-with-spices-rosemary_80090-2666.jpg?w=360
-
-
-

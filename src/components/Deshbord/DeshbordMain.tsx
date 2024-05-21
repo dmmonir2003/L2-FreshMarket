@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import AllProducts from "./AllProducts";
 
 
@@ -16,7 +16,7 @@ const DeshbordMain = async () => {
 
     return (
         <div>
-            <Typography>All Products</Typography>
+            <Box mt={18} mb={5}> <Typography>All Products</Typography></Box>
             <AllProducts data={data}></AllProducts>
         </div>
     );
